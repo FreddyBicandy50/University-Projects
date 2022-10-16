@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:Python",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:\"Web Dev\"",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:Java",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0.6,
+  "nodeSizeMultiplier": 1.03595505617978,
+  "lineSizeMultiplier": 1.94438202247191,
+  "collapse-forces": true,
+  "centerStrength": 0.476190476190476,
+  "repelStrength": 13.9285714285714,
+  "linkStrength": 1,
+  "linkDistance": 262,
+  "scale": 0.8854989543150451,
+  "close": true
+}

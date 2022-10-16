@@ -1,3 +1,7 @@
+![[Pasted image 20221012190356.png]]
+
+![[Pasted image 20221012191727.png]]
+
 ``` HTML
 <html>
 

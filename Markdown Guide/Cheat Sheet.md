@@ -20,7 +20,7 @@
 ### [Links]
 [title](https://www.example.com)
 ### [image]
-![alt text](image.jpg.md)
+![alt text](image.jpg)
 
 ### [Table]
 | Syntax | Description |  
@@ -29,7 +29,7 @@
 | Paragraph | Text |
 
 ### [Code Block]
-```  
+```
 {  
   "firstName": "John",  
   "lastName": "Smith",  

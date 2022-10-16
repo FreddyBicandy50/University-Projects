@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "livePreview": true,
+  "spellcheck": true,
+  "trashOption": "system",
+  "newFileLocation": "current",
+  "newFileFolderPath": "/",
+  "fileSortOrder": "byCreatedTime"
+}
