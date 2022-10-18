@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/PythonBasics.md",
+                "file": "Web Dev/CSC309.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "b156c8be0e239fe7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Dev/htmlcheatsheet.md.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/PythonBasics.md",
+                "file": "Web Dev/htmlcheatsheet.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/PythonBasics.md",
+                "file": "Web Dev/htmlcheatsheet.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Python/PythonBasics.md"
+                "file": "Web Dev/htmlcheatsheet.md.md"
               }
             }
           }
@@ -139,17 +152,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "9587b9f15f809fef",
+  "active": "b156c8be0e239fe7",
   "lastOpenFiles": [
+    "Web Dev/CSC309.md",
+    "Web Dev/htmlcheatsheet.md.md",
     "Python/52weeks_python.md",
+    "Web Dev/intro_to_HTML.md",
     "Python/PythonBasics.md",
     "Java/Programing_recap.md",
     "Java/CSC213L.md",
     "Java/Java_input.md",
     "Java/2022-10-15.md",
-    "Java/intro_to_java.md",
-    "Markdown Guide/Cheat Sheet.md",
-    "Java/CSC2013.md",
-    "Web Dev/intro_to_webdev.md"
+    "Java/intro_to_java.md"
   ]
 }
