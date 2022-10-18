@@ -6,5 +6,8 @@
   "trashOption": "system",
   "newFileLocation": "current",
   "newFileFolderPath": "/",
-  "fileSortOrder": "byCreatedTime"
+  "fileSortOrder": "byCreatedTime",
+  "defaultViewMode": "preview",
+  "showLineNumber": false,
+  "showFrontmatter": false
 }

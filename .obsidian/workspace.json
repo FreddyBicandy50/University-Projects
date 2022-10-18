@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Dev/CSC309.md",
+                "file": "Python/PythonIntermediate.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "b156c8be0e239fe7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web Dev/htmlcheatsheet.md.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Dev/htmlcheatsheet.md.md",
+                "file": "Python/PythonIntermediate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Dev/htmlcheatsheet.md.md",
+                "file": "Python/PythonIntermediate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Dev/htmlcheatsheet.md.md"
+                "file": "Python/PythonIntermediate.md"
               }
             }
           }
@@ -152,17 +139,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "b156c8be0e239fe7",
+  "active": "9587b9f15f809fef",
   "lastOpenFiles": [
     "Web Dev/CSC309.md",
-    "Web Dev/htmlcheatsheet.md.md",
-    "Python/52weeks_python.md",
-    "Web Dev/intro_to_HTML.md",
-    "Python/PythonBasics.md",
+    "2022-10-18.md",
     "Java/Programing_recap.md",
     "Java/CSC213L.md",
-    "Java/Java_input.md",
-    "Java/2022-10-15.md",
-    "Java/intro_to_java.md"
+    "Web Dev/Pasted image 20221012190356.png",
+    "Python/52weeks_python.md",
+    "Python/PythonBasics.md",
+    "Python/PythonIntermediate.md",
+    "Web Dev/HTML_cheatSheet.md",
+    "Web Dev/htmlcheatsheet.md.md"
   ]
 }
