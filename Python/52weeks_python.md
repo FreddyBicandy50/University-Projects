@@ -4,7 +4,3 @@
 ![alt text](PythonIntermediate.md)
 
  ---
-
- 
-
-![][test.md]
