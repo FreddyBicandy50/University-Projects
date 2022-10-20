@@ -11,12 +11,8 @@
             "id": "9587b9f15f809fef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Python/test.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Python/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Python/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Python/test.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -141,15 +133,15 @@
   },
   "active": "9587b9f15f809fef",
   "lastOpenFiles": [
-    "Python/52weeks_python.md",
-    "Python/PythonIntermediate.md",
-    "Web Dev/CSC309.md",
-    "2022-10-18.md",
+    "Java/Evaluation1.md",
+    "Java/CSC2013.md",
+    "Java/Evaluation.md",
+    "Java/Java_input.md",
     "Java/Programing_recap.md",
-    "Java/CSC213L.md",
-    "Web Dev/Pasted image 20221012190356.png",
-    "Python/PythonBasics.md",
-    "Web Dev/HTML_cheatSheet.md",
-    "Web Dev/htmlcheatsheet.md.md"
+    "Python/52weeks_python.md",
+    "Web Dev/CSC309.md",
+    "Python/test.md",
+    "Python/PythonIntermediate.md",
+    "2022-10-18.md"
   ]
 }
