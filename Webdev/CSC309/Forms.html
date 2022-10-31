@@ -1,0 +1,80 @@
+<html> 
+<head>
+    <title> My First HTML Page  </title>
+</head>
+<body bgcolor="AAFFCC">
+
+    <form method="post" action="#">
+
+        <h1>Feedback Form </h1>
+
+       <p>
+            Please fill out this form to help us improve our site
+       </p>
+
+        <p> 
+            Name: <input type="text" name="Name" size="20" maxlength="10" required>
+        </p>
+
+        <p> 
+            Comments:<br>
+            <textarea rows="5" cols="60" name="comments" placeholder="Enter Comments here"></textarea>
+        </p>
+
+        <p>
+            Email Address: <input type="email" name="email" required>
+        </p>
+
+        <p>
+            Things you liked:<br>
+            Site Design <input type="checkbox" name="site" value="Search engine">
+            Links <input type="checkbox" name="links" value="Links">
+            Ease of Use <input type="checkbox" name="ease" value="Ease of use">
+            Images <input type="checkbox" name="images" value="Images">
+            Source code <input type="checkbox" name="source" value="Source code">
+        </p>
+
+        <p>
+            How did you get to our site:<br>
+            Search Engine <input type="radio" name="choose" value="Search Engine">
+            Links from another site <input type="radio" name="choose" value="Links from another site">
+            Deitel.com web site <input type="radio" name="choose" value="Deitel.com web site">
+            Reference in a book <input type="radio" name="choose" value="Reference in a book">
+            Other <input type="radio" name="choose" value="Other">
+        </p>
+
+        <p>
+            Rate our site:
+            <select name="dropdown">
+                <option> -- </option>
+                <option value="1"> 1 </option>
+                <option> 2 </option>
+                <option> 3 </option>
+                <option> 4 </option>
+                <option> 5 </option>
+                <option> 6 </option>
+                <option> 7 </option>
+                <option> 8 </option>
+            </select>
+
+        </p>
+            Your car:
+            <select name="group">
+            <optgroup label="Swedish Cars">
+                <option> Volvo </option>
+                <option> Saab </option>
+                <option> blabla </option>
+            </optgroup>
+            
+            <optgroup label="German Cars">
+                <option> Mercedes </option>
+                <option> BMW </option>
+            </optgroup>
+        </select>
+    </p>
+    <input type="submit" name="b1" value="Submit">
+    <input type="reset" name="b2" value="Clear"> 
+</form>
+</body>
+
+</html>
