@@ -1,4 +1,4 @@
-package Java.University;
+package Java.University.CSC213;
 
 import java.util.Scanner;
 
@@ -16,6 +16,6 @@ public class Advanced {
         int arr[]=new int[input.nextInt()];
         for (int i=0;i<arr.length;i++) arr[i]=i;
         for (int i=0;i<arr.length;i++) System.out.println(arr[i]);
-
+        input.close();
     }   
 }
