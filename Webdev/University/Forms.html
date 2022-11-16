@@ -1,80 +1,170 @@
-<html> 
-<head>
-    <title> My First HTML Page  </title>
-</head>
-<body bgcolor="AAFFCC">
-
-    <form method="post" action="#">
-
-        <h1>Feedback Form </h1>
-
-       <p>
-            Please fill out this form to help us improve our site
-       </p>
-
-        <p> 
-            Name: <input type="text" name="Name" size="20" maxlength="10" required>
-        </p>
-
-        <p> 
-            Comments:<br>
-            <textarea rows="5" cols="60" name="comments" placeholder="Enter Comments here"></textarea>
-        </p>
-
-        <p>
-            Email Address: <input type="email" name="email" required>
-        </p>
-
-        <p>
-            Things you liked:<br>
-            Site Design <input type="checkbox" name="site" value="Search engine">
-            Links <input type="checkbox" name="links" value="Links">
-            Ease of Use <input type="checkbox" name="ease" value="Ease of use">
-            Images <input type="checkbox" name="images" value="Images">
-            Source code <input type="checkbox" name="source" value="Source code">
-        </p>
-
-        <p>
-            How did you get to our site:<br>
-            Search Engine <input type="radio" name="choose" value="Search Engine">
-            Links from another site <input type="radio" name="choose" value="Links from another site">
-            Deitel.com web site <input type="radio" name="choose" value="Deitel.com web site">
-            Reference in a book <input type="radio" name="choose" value="Reference in a book">
-            Other <input type="radio" name="choose" value="Other">
-        </p>
-
-        <p>
-            Rate our site:
-            <select name="dropdown">
-                <option> -- </option>
-                <option value="1"> 1 </option>
-                <option> 2 </option>
-                <option> 3 </option>
-                <option> 4 </option>
-                <option> 5 </option>
-                <option> 6 </option>
-                <option> 7 </option>
-                <option> 8 </option>
-            </select>
-
-        </p>
-            Your car:
-            <select name="group">
-            <optgroup label="Swedish Cars">
-                <option> Volvo </option>
-                <option> Saab </option>
-                <option> blabla </option>
-            </optgroup>
-            
-            <optgroup label="German Cars">
-                <option> Mercedes </option>
-                <option> BMW </option>
-            </optgroup>
-        </select>
-    </p>
-    <input type="submit" name="b1" value="Submit">
-    <input type="reset" name="b2" value="Clear"> 
-</form>
-</body>
-
+<!Doctype>
+<html>
+    <head>
+        <title>assignment</title>
+        <meta charset="utf-8">
+    </head>
+    <body style="font-family:Tahoma">
+        <table cellspacing="0" cellpadding="5" border="1" style="width:70%">
+            <tr>
+                <td>
+                    <form autocomplete="on" method="post" action="//wsl%24/kali-linux/home/null/programing/Webdev/University/thanks.html">
+                    <h1 align="center">HTML5 Form with new input Types</h1>
+                    <table style="width:70%" border="1" cellspacing="0" cellpadding="4">
+                        <tr >
+                            <td align="center">
+                                <b>Name</b>
+                            </td>
+                            <td >
+                                <input type="text" name="Name" placeholder="your full name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Email</b>
+                            </td>
+                            <td>
+                                <input type="email" name="mail" placeholder="name@domain.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Age</b>
+                            </td>
+                            <td>
+                                <input type="number" name="quantity" maxlength="2" min="15" max="75"> 
+                            </td> 
+                        </tr>
+                            <td align="center">
+                                <b>Country</b>
+                            </td>
+                            <td> 
+                                <select name="country">
+                                    <option value="lb">Lebanon</option>
+                                    <option value="fr">France</option>
+                                    <option value="Uk">United Kingdom</option> 
+                                </select>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Username</b>
+                            </td>
+                            <td>
+                                <input type="text" name="Name" placeholder="your username">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Password</b>
+                            </td>
+                            <td>
+                                <input type="password" name="pwd">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Confirm Password</b>
+                            </td>
+                            <td>
+                                <input type="password" name="confpwd" placeholder="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Gender</b>
+                            </td>
+                            <td> 
+                                <input type="radio" name="choose" value="gender">Male
+                                <input type="radio" name="choose" value="gender">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Hobbies</b>
+                            </td>
+                            <td> 
+                                <input type="checkbox" name="choose" value="">Sports
+                                <input type="checkbox" name="choose" value="">Music
+                                <input type="checkbox" name="choose" value="">Video Games
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Favorit Color</b>
+                            </td>
+                            <td> 
+                                <input type="color" name="body" value="#000000">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Rating of Birth</b>
+                            </td>
+                            <td> 
+                                <input type="date" name="birthday">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Rating</b>
+                            </td>
+                            <td> 
+                                <input type="range" min="0" max="10" value="50" class="slider">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Website</b>
+                            </td>
+                            <td> 
+                                <input type="url" name="domain" placeholder="http://www.example.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Credit Card Number</b>
+                            </td>
+                            <td> 
+                                <input type="text" name="credit" placeholder="1234-1234-1234-1234" maxlength="19">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Major</b>
+                            </td>
+                            <td> 
+                                <input type="text"  size="15" name="d">
+                            </td>
+                        </tr>
+                        <tr style="Height:160px">
+                            <td align="center">
+                                <b>Message</b>
+                            </td>
+                            <td> 
+                                <textarea rows="10" cols="60" name="comments" placeholder="Write your message here"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <b>Image</b>
+                            </td>
+                            <td> 
+                                <input type="file" id="myFile" name="filename">
+                              
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td align="center" colspan="2"> 
+                                <button type="submit" value="Submit">Submit</button>
+                                <button type="reset" value="Reset">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                </td>
+            </tr>
+           
+        </table>
+    </body>
 </html>
