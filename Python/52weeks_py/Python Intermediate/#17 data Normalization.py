@@ -18,3 +18,4 @@ def search_device(device_name):
             print("")
 if __name__ == "__main__":
     search_device(input("device name:").casefold())
+    
