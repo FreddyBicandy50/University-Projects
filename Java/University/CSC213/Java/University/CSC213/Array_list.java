@@ -6,6 +6,7 @@ public class Array_list {
  
     public static void main(String[] args){
         ArrayList<Integer> A = new ArrayList<>(), B = new ArrayList<>(), C = new ArrayList<>(), D = new ArrayList<>(), F = new ArrayList<>();
+        
         Scanner input=new Scanner(System.in);
         int nogrades=0,number;
         while (true){
