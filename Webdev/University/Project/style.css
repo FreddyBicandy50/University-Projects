@@ -1,0 +1,19 @@
+body{
+    font-family: "Helvetica Neue",Helvetica ;
+    color:white;
+}
+p{
+    margin:5px;
+    font-size: 0.93rem;
+}
+#header {
+    background-color: rgb(181,9,9);
+    display: inline-block;
+    padding: 10px;
+    width: 99%;
+    position: fixed;
+    text-align: right;
+    z-index: 99;
+    left: 0px;
+    top: 0px;
+} 
