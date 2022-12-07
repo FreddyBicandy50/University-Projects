@@ -1,19 +1,70 @@
-body{
-    font-family: "Helvetica Neue",Helvetica ;
-    color:white;
+body {
+    font-family: "Helvetica Neue", Helvetica;
+    color: white;
 }
-p{
-    margin:5px;
-    font-size: 0.93rem;
+
+p {
+    margin: 5px;
 }
+
 #header {
-    background-color: rgb(181,9,9);
+    background-color: rgb(181, 9, 9);
     display: inline-block;
     padding: 10px;
     width: 99%;
     position: fixed;
-    text-align: right;
-    z-index: 99;
     left: 0px;
-    top: 0px;
+    top: 0px; 
+}
+
+#headinside { 
+    display: inline-block;
+    padding: 1px;
+    width: 50%;  
+    float:right; 
+    text-align: right;  
+    font-size:14px
+}
+
+.dropdown {
+    position: relative;
+    right: 10px;
+}
+
+.dropdown_menu { 
+    position: absolute; 
+    top: 30px; 
+    right: 10px; 
+    color: black;
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity:0;
+    pointer-events:none;
+    transform: translateY(-12px);
+    transition:opacity 150ms ease-in-out,transform 150ms ease-in-out;
 } 
+.dropdown.active > .dropdown_button + .dropdown_menu{
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:auto;
+}
+.dropdown_button{
+    color:white;
+    border-color:transparent;
+}
+.dropdown.active> .dropdown_button,
+.dropdown_button:hover {
+    color:rgb(228, 225, 225);
+    transition: opacity 400ms ease-in-out;
+}
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    color: rgb(228, 225, 225);
+    transition: opacity 400ms ease-in-out;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+}
