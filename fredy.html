@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> eval </title>
+        <link rel="stylesheet" href="file://wsl.localhost/kali-linux/home/null/programing/style.css"> 
+        <script src="file://wsl.localhost/kali-linux/home/null/programing/script.js" defer></script>
+    </head>
+    <body>
+        <form method="post">
+            <table border="0">
+                <tr>
+                    <td><input type="radio" name="choose" value="Integer"><b>Integer</b></td>
+                    <td><input type="radio" name="choose" value="Float"><b>Float</b></td>
+                </tr>
+                <tr>
+                    <td  align="center"><label for="first Num"><br> <b>First Num</b></lable></td>
+                    <td><input class="number" type="number" id="num1" ></td>
+                </tr>
+                <tr>
+                    <td  align="center"><label for="first Num"><br> <b>Operand</b></lable></td>
+                        <td><select id="operand" name="operand">
+                            <option value="Select">Select operand</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="/">/</option>
+                            <option value="*">*</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td  align="center"><label for="Second Num"><br> <b>Second Num</b></lable></td>
+                        <td><input class="number" type="number" id="num2" ></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2">
+                            <button id="calculate" onclick="calculate()">Calculate</button>
+                            <br>
+                            <input id="result" class="number" type="text" >
+                        </td>
+                    </tr>
+            </table> 
+        </form>
+    </body>
+</html>

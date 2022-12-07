@@ -13,25 +13,38 @@
 <body>
     <div id="header"> 
     <div id="headinside">
-        <table cellpadding="10" style="border-color:transparent" border="1"
+        <table  cellpadding="10" style="border-color:transparent" border="1"
         align="right" padding="0" cellspacing="0"> 
             <tr>
-                <td rowspan="2"> 
-                    <a  href="tel:+96179131124" Style="color:white;  right: 10px;">Call Now+96179131124</a> 
+                <td rowspan="2">  
                 </td> 
                 <td></td>
-                <td>
-                    <div class="dropdown" data-dropdown>
-                    <button class="dropdown_button" data-dropdown-button><b>My Account ▼</b></button>
-                    <div class="dropdown_menu">
-                            <input type="text" placeholder="username"></input>
-                            <input type="password" placeholder="password"></input>
-                            <input type="submit">
-                        </from> 
-                        
-                    </div>
+                <td> 
             </tr> 
         </table>
-    </div> 
+
+        <div class="dropdown" data-dropdown>
+            <a id="contact" href="tel:+96179131124" Style="right: 10px;">Call Now+96179131124</a>
+            <button class="dropdown_button" data-dropdown-button><b data-dropdown-button>My Account ▼</b></button>
+            <div class="dropdown_menu">
+                <form method="post"
+                    action="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text" id="username"></input>
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password"></input>
+                    <br>
+                    <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
+                        <font size=2>forgot password?</font>
+                    </a>
+                    <br>
+                    <input id="login/crea" type="submit" value="login">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

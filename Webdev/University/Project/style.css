@@ -29,10 +29,14 @@ p {
 .dropdown {
     position: relative;
     right: 10px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 .dropdown_menu { 
-    position: absolute; 
+    position: absolute;  
     top: 30px; 
     right: 10px; 
     color: black;
@@ -51,20 +55,34 @@ p {
     pointer-events:auto;
 }
 .dropdown_button{
-    color:white;
+    color:rgb(228, 225, 225);
     border-color:transparent;
+    background-color:transparent;  
 }
 .dropdown.active> .dropdown_button,
 .dropdown_button:hover {
-    color:rgb(228, 225, 225);
+    color:rgb(204, 204, 204);
     transition: opacity 400ms ease-in-out;
 }
-a{
+#contact{
     text-decoration:none;
+    color:rgb(228, 225, 225);
 }
 
-a:hover{
-    color: rgb(228, 225, 225);
+#contact:hover{
+    color: rgb(204, 204, 204);
     transition: opacity 400ms ease-in-out;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+}
+
+form{
+    position:relative; 
+}
+input {
+    border:0.2rem rgb(181, 9, 9) solid;
+    border-radius:5px;
+    font-size:inherit;
+    font-size:inherit;
+    outline:none;
+    background:none;
+    padding:5px;
 }
