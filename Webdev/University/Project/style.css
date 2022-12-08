@@ -30,7 +30,7 @@ body {
 }
 #Shop {
     float: left; 
-    margin-top: -50px;
+    margin-top: -35px;
     margin-left: 400px;
     width: 25%;
     height: 280px;
@@ -171,7 +171,7 @@ form{
 #Logo{ 
     margin-left:35px; 
     margin-top:13px; 
-    width: 10%
+    width: 5%
 }
 
 #leftbox {
@@ -184,7 +184,7 @@ form{
     float: left;
     background: Green;
     width: 50%;
-    margin-top: -250px;
+     margin-top:-250px ;
     height: 280px;
 }
         
