@@ -1,44 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: "Helvetica Neue", Helvetica;
-    color: white;
+    background-color: #e6e6e6;
 }
-
-p {
-    margin: 5px;
-}
+ 
 
 #header {
     background-color: rgb(181, 9, 9);
     display: inline-block;
     padding: 10px;
-    width: 99%;
-    position: fixed;
-    left: 0px;
-    top: 0px; 
+    width: 100%;  
+    font-size: 14px;
 }
 
-#headinside { 
+#navbar {
+    background-color: rgb(255, 255, 255);
     display: inline-block;
-    padding: 1px;
-    width: 50%;  
-    float:right; 
-    text-align: right;  
-    font-size:14px
+    padding: 20px;
+    width: 100%;  
+    font-size: 14px;
 }
+
 
 .dropdown {
     position: relative;
-    right: 10px;
     display:flex;
     justify-content: flex-end;
+    margin-right: 45px;
     align-items: center;
     gap: 20px;
+    padding:5px;
 }
 
 .dropdown_menu { 
     position: absolute;  
-    top: 30px; 
-    right: 10px; 
+    top: 40px; 
+    margin-right: 70px;
     color: black;
     background-color: white;
     padding: 0.75rem;
@@ -46,16 +47,16 @@ p {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity:0;
     pointer-events:none;
-    transform: translateY(-12px);
+    transform: translateY(-12px) translateX(60%);
     transition:opacity 150ms ease-in-out,transform 150ms ease-in-out;
 } 
 .dropdown.active > .dropdown_button + .dropdown_menu{
     opacity:1;
-    transform:translateY(0);
+    transform:translateY(0) translateX(60%);
     pointer-events:auto;
 }
 .dropdown_button{
-    color:rgb(228, 225, 225);
+    color:rgb(238, 238, 238);
     border-color:transparent;
     background-color:transparent;  
 }
@@ -66,23 +67,83 @@ p {
 }
 #contact{
     text-decoration:none;
-    color:rgb(228, 225, 225);
+    color:rgb(233, 233, 233);
 }
 
 #contact:hover{
-    color: rgb(204, 204, 204);
+    color: rgb(207, 207, 207);
     transition: opacity 400ms ease-in-out;
 }
 
-form{
-    position:relative; 
+ 
+.input-box {
+    position: relative;
+    width: 75%;
+    left: 25px;
+    height: fit-content;
 }
-input {
-    border:0.2rem rgb(181, 9, 9) solid;
-    border-radius:5px;
-    font-size:inherit;
-    font-size:inherit;
-    outline:none;
-    background:none;
-    padding:5px;
+
+.input-box span {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%); 
+    z-index: 20;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.login_create {
+    border: 0.2rem rgb(181, 9, 9) solid;
+    font-size: inherit;
+    outline: none;
+    background: none;
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    width: 100%;
+}
+.login_btn {
+    font-size: inherit;
+    outline: none;
+    border-color: transparent ;
+    padding: 5px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 50px;
+}
+.login_btn:hover {
+    background-color:rgb(207, 207, 207);
+
+}
+
+.login_create:focus {
+    border-color: 0.2rem rgb(181, 9, 9) solid;
+}
+
+.login_create:focus+span,
+.login_create:not(:placeholder-shown)+span {
+    font-size: 0.9em;
+    color: 0.2rem rgb(181, 9, 9) solid ;
+    top: -1px;
+    background-color: white;
+    padding: 0 0.5em;
+    border-radius: 2em;
+
+}
+
+.login_create:focus+span {
+    color: 0.2rem rgb(181, 9, 9) solid;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap: 5px;
+}
+
+#Logo{ 
+    margin-right: 1700px;
+    height: 5%;
+    width: 7%
 }

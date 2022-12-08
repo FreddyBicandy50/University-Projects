@@ -13,38 +13,38 @@
 <body>
     <div id="header"> 
     <div id="headinside">
-        <table  cellpadding="10" style="border-color:transparent" border="1"
-        align="right" padding="0" cellspacing="0"> 
-            <tr>
-                <td rowspan="2">  
-                </td> 
-                <td></td>
-                <td> 
-            </tr> 
-        </table>
-
         <div class="dropdown" data-dropdown>
             <a id="contact" href="tel:+96179131124" Style="right: 10px;">Call Now+96179131124</a>
-            <button class="dropdown_button" data-dropdown-button><b data-dropdown-button>My Account ▼</b></button>
+            <button  class="dropdown_button" data-dropdown-button>
+                <b class="dropdown_button" data-dropdown-button>My Account ▼</b> </button>
             <div class="dropdown_menu">
                 <form method="post"
                     action="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
-                    <label for="username">Username</label>
-                    <br>
-                    <input type="text" id="username"></input>
-                    <br>
-                    <label for="password">Password</label>
-                    <br>
-                    <input type="password" id="password"></input>
-                    <br>
+                    <div class="input-box">
+                        <input class="login_create" type="email"  id="email" placeholder=" " required />
+                        <span>Username</span>
+                    </div>
+                    <div class="input-box">
+                        <input class="login_create" type="password"  id="paswd"  placeholder=" " required />
+                        <span>Password</span>
+                    </div> 
+                        <input class="login_btn" type="submit" value="LOGIN" id="login"  required /> 
+                    
                     <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
                         <font size=2>forgot password?</font>
-                    </a>
-                    <br>
-                    <input id="login/crea" type="submit" value="login">
+                    </a>  
                 </form>
             </div>
         </div>
     </div>
+    </div> 
+
+    <div id="navbar"> 
+        <div id="headinside">
+        <img id="Logo" src="logo.png"></img> 
+        <div class="dropdown" data-dropdown> 
+        </div>  
+    </div> 
+    
 </body>
 </html>
