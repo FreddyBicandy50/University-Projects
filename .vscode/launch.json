@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch book",
+            "request": "launch",
+            "mainClass": "Java.University.CSC213.book",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch book",
+            "request": "launch",
+            "mainClass": "book",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
             "name": "Launch j",
             "request": "launch",
             "mainClass": "j",
