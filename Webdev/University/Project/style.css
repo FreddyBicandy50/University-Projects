@@ -6,6 +6,7 @@
 body {
     font-family: "Helvetica Neue", Helvetica;
     background-color: #e6e6e6;
+    overflow-x: hidden;
 }
  
 
@@ -13,7 +14,7 @@ body {
     background-color: rgb(181, 9, 9);
     display: inline-block;
     padding: 10px;
-    width: 100%;  
+    width: 100%;
     font-size: 14px;
 }
 
@@ -22,31 +23,20 @@ body {
     align-items: center;
     width: 100%;  
     font-size: 14px;
+    display:flex;
+
+}
+#navinside{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 180px;
 }
 .nav_btn {
     color: rgb(0, 0, 0); 
     text-decoration: none; 
-    margin-left: 500px;     
-}
-#Shop {
-    float: left; 
-    margin-top: -35px;
-    margin-left: 400px;
-    width: 25%;
-    height: 280px;
-}
-#Contact {
-    float: left; 
-    width: 50%;
-    margin-top: -278px;
-    margin-left: 1000px;
-    height: 280px;
-}
-#About {
-    float: right; 
-    width: 15%;
-    margin-top: -278px;  
-}
+    margin-left: 200px;     
+} 
 .nav_btn:hover {
     color: rgb(181, 9, 9); 
     margin-left: 500px;     
@@ -59,7 +49,8 @@ body {
     justify-content: flex-end;
     margin-right: 45px;
     align-items: center;
-    gap: 20px;
+    gap: 20px;  
+    background-color:rgb(181, 9, 9) !important;
     padding:5px;
 }
 
@@ -76,6 +67,7 @@ body {
     pointer-events:none;
     transform: translateY(-12px) translateX(60%);
     transition:opacity 150ms ease-in-out,transform 150ms ease-in-out;
+    z-index: 50;
 } 
 .dropdown.active > .dropdown_button + .dropdown_menu{
     opacity:1;
@@ -90,7 +82,7 @@ body {
 .dropdown.active> .dropdown_button,
 .dropdown_button:hover {
     color:rgb(204, 204, 204);
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out; 
 }
 #contact{
     text-decoration:none;
@@ -171,7 +163,7 @@ form{
 #Logo{ 
     margin-left:35px; 
     margin-top:13px; 
-    width: 5%
+    width: 7%
 }
 
 #leftbox {
