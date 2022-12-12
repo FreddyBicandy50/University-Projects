@@ -24,11 +24,11 @@
                 <form method="post"
                     action="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
                     <div class="input-box">
-                        <input class="login_create" type="email"  id="email" placeholder=" " required />
+                        <input class="user_pswd" type="email"  id="email" placeholder=" " required />
                         <span>Username</span>
                     </div>
                     <div class="input-box">
-                        <input class="login_create" type="password"  id="paswd"  placeholder=" " required />
+                        <input class="user_pswd" type="password"  id="paswd"  placeholder=" " required />
                         <span>Password</span>
                     </div> 
                         <input class="login_btn" type="submit" value="LOGIN" id="login"  required /> 
@@ -43,8 +43,8 @@
     </div> 
 
     <div id="navbar"> 
+        <img id="Logo" src="logo.png"></img> 
         <div id="navinside"> 
-            <img id="Logo" src="logo.png"></img> 
                 <a class="nav_btn"href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html"><h3 id="Shop">Shop</h3>  </a>
                 <a class="nav_btn" href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html"><h3 id="Contact">Contact</h3> </a>
                 <a class="nav_btn" href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html"><h3 id="About">About</h3></a>  
@@ -56,21 +56,32 @@
     
         <!-- Full-width images with number and caption text -->
         <div  class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="a.jfif" style="width:100%">
-            <div class="text">Caption Text</div>
+            <img style="opacity: 0.8;" class="img" src="1.jpg" > 
+            <h1 style="margin-left: 20% !important;" class="imgtext">
+                <marquee onMouseOver="this.start()" delay="90" scrollamount="20" behavior="slide" direction="up">Join Bicandy Network Solutions today <br> for the
+                Best Quality Internet Experience</marquee>
+            </h1>
         </div>
     
         <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="b.jfif" style="width:100%">
-            <div class="text">Caption Two</div>
+            <img style="opacity: 0.6" class="img" src="2.jpg" >
+            <h1  class="imgtext ">
+                <marquee>
+                    NEW
+                    GAMING DSL PLANS.
+                </marquee>
+            </h1>
         </div>
     
         <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <img  style="opacity: 0.6" class="img" src="3.jpg" > 
+            <h1 class="imgtext">
+                <marquee>
+                    Fiber Optics Connection that can reach speeds of <br>
+                    up to 940 Megabits per second.
+                </marquee>
+                
+            </h1>
         </div>
     
         <!-- Next and previous buttons -->
@@ -85,5 +96,7 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+
+   <div id="blackbox"></div>
 </body>
 </html>
