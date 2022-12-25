@@ -42,11 +42,11 @@ body {
     .dropdown_menu {
         position: absolute;
         top: 40px;
-        margin-right: 70px;
+        margin-right: 100px;
         color: black;
         height:200px;
         width: 250px;
-        background-color: white;
+        background-color: rgb(253, 252, 252);
         padding: 0.75rem;
         border-radius: .25rem;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
@@ -65,7 +65,7 @@ body {
             height:50px;
             top:20px
         }
-        .input-box span {
+        .input-box label {
             position: absolute;
             left: 1em;
             top: -10px;
@@ -80,7 +80,7 @@ body {
             outline: none;
             background: none;
             padding: 5px;
-            background: transparent;
+            background: rgb(247, 247, 247);
             border-radius: 5px;
             top: 10px;
             width: 100%;
@@ -101,8 +101,8 @@ body {
         .user_pswd:focus {
             border-color: 0.2rem rgb(181, 9, 9) solid;
         }
-        .user_pswd:focus+span,
-        .user_pswd:not(:placeholder-shown)+span {
+        .user_pswd:focus+label,
+        .user_pswd:not(:placeholder-shown)+label {
             font-size: 0.9em;
             color: 0.2rem rgb(181, 9, 9) solid;
             top: -1px;
@@ -111,7 +111,7 @@ body {
             border-radius: 2em;
     
         }
-        .user_pswd:focus+span {
+        .user_pswd:focus+label {
             color: 0.2rem rgb(181, 9, 9) solid;
         }
     .dropdown.active>.dropdown_button,
@@ -136,7 +136,7 @@ body {
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 180px;
+        padding-right: 180%;
     }
     #Logo {
         margin-left: 35px;
@@ -147,7 +147,7 @@ body {
     .nav_btn {
         color: rgb(0, 0, 0); 
         text-decoration: none; 
-        margin-left: 300%;    
+        margin-left: 200%;    
     } 
     .nav_btn:hover {
         color: rgb(181, 9, 9);     
@@ -178,31 +178,43 @@ form{
         width: 100%;
         margin-top: 10%;
         position:relative;
-        z-index:50%;
         height: 600px;
 }
 
 
  
 #leftbox {
+    color: black;
     float: left;
-    background: Red;
+    margin-top: -45px;
+    margin-left: 20px;
+    background-color: rgb(253, 252, 252);
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     width: 25%;
-    height: 280px;
+    height: 420px;
 }
 
 #middlebox {
     float: left;
-    background: Green;
-    width: 50%;
-    margin-top: -250px;
-    height: 280px;
+    color: black;
+    margin-top: -45px;
+    margin-left: 90px;
+    background-color: rgb(253, 252, 252);
+    width: 25%;
+    height: 420px;
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    
 }
+
 
 #rightbox {
     float: right;
     background: blue;
     width: 25%;
-    margin-top: -250px;
+    margin-top: -80px;
     height: 280px;
 }

@@ -13,15 +13,24 @@
     opacity: 1;
 
 }
+.mySlides>img {
+    width: 100%;
+}
+.mySlides>h1 {
+    margin-top: -55%;
+    color: white;
+    margin-left: 10%;
+    text-shadow: 2px 2px 4px rgb(114, 4, 4);
+    font-size: 60px;
+}
 
 /* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
+    top: 75%;
+    width: auto; 
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -32,8 +41,8 @@
 }
 
 /* Position the "next button" to the right */
-.next {
-    right: 0;
+.next { 
+    right: 0px;
     border-radius: 3px 0 0 3px;
 }
 
@@ -41,18 +50,7 @@
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
+} 
 
 /* The dots/bullets/indicators */
 .dot {
@@ -71,37 +69,4 @@
     background-color: #862929;
 }
 
-/* Fading animation */
-.fade-in {
-    animation-name: fade-in;
-    animation-duration: 2.5s;
-}
-
-.fade-out {
-    animation-name: fade-out;
-    animation-duration: 2.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* image slider*/
-.img {
-    width: 100%;
-}
-
-
-.imgtext {
-    margin-top: -45%;
-    color: white;
-    margin-left: 10%;
-    text-shadow: 2px 2px 4px rgb(114, 4, 4);
-    font-size: 60px;
-}
+ 

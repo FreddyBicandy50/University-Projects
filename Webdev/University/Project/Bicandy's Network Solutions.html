@@ -25,18 +25,18 @@
                     action="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
                     <div class="input-box">
                         <input class="user_pswd" type="email"  id="email" placeholder=" " required />
-                        <span>Username</span>
+                        <label><h5>Username</h5></label>
                     </div>
                     <div class="input-box">
                         <input class="user_pswd" type="password"  id="paswd"  placeholder=" " required />
-                        <span>Password</span>
+                        <label> <h5>Password</h5></label>
                     </div> 
                         <input class="login_btn" type="submit" value="LOGIN" id="login"  required /> 
                     
                     <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
                         <font size=2>forgot password?</font>
                     </a>  
-                </form>
+                </form> 
             </div>
         </div>
     </div>
@@ -55,17 +55,17 @@
     <div class="slideshow-container">
     
         <!-- Full-width images with number and caption text -->
-        <div  class="mySlides fade">
-            <img style="opacity: 0.8;" class="img" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/1.jpg" > 
-            <h1 style="margin-left: 20% !important;" class="imgtext">
+        <div  class="mySlides">
+            <img style="opacity: 0.8;" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/1.jpg" > 
+            <h1 style="font-size: 55px ;margin-left: 15% !important;">
                 <marquee onMouseOver="this.start()" delay="90" scrollamount="20" behavior="slide" direction="up">Join Bicandy Network Solutions today <br> for the
                 Best Quality Internet Experience</marquee>
             </h1>
         </div>
     
-        <div class="mySlides fade">
-            <img style="opacity: 0.6" class="img" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/2.jpg" >
-            <h1  class="imgtext ">
+        <div class="mySlides" data-interval="1000">
+            <img style="opacity: 0.6" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/2.jpg" >
+            <h1 >
                 <marquee>
                     NEW
                     GAMING DSL PLANS.
@@ -73,9 +73,9 @@
             </h1>
         </div>
     
-        <div class="mySlides fade">
-            <img  style="opacity: 0.6" class="img" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/3.jpg" > 
-            <h1 class="imgtext">
+        <div class="mySlides">
+            <img  style="opacity: 0.6" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/3.jpg" > 
+            <h1 >
                 <marquee>
                     Fiber Optics Connection that can reach speeds of <br>
                     up to 940 Megabits per second.
@@ -97,6 +97,10 @@
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-   <div id="blackbox"></div>
+   <div id="blackbox">
+    <div id="leftbox"></div>
+    <div id="middlebox"></div>
+    <div id="rightbox"></div>
+   </div>
 </body>
 </html>
