@@ -1,6 +1,6 @@
 <html>
 
-    <head> <title>Variab1e Exanple </title>
+    <head> <title>Variab1e  x </title>
     </head>
     <?php
     /*$columns = 20;
