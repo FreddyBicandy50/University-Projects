@@ -352,7 +352,7 @@
 
 @media (min-width: 1300px) {
     .plansimage {
-        width: 110%; 
+        width: 100%; 
     }
 }
 @media (min-width: 1920px) {
@@ -365,7 +365,7 @@
 
 @media (min-width: 1300px) {
     .includeimage {
-        width: 110%;  
+        width: 100%;  
     }
 }
 @media (min-width: 1920px) {

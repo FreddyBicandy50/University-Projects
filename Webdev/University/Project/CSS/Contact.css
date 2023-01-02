@@ -19,23 +19,40 @@
 }
 
 @media (min-width: 1300px) {
-    .nav_text {
-        position: absolute;
+    .aftershlash { 
+     position: absolute;
         z-index: 1;
         color: white;
         margin-top: 15%;
-        margin-left: 50%
+        margin-left:55%
+    }
+}
+@media (min-width: 1920px) {
+    .aftershlash { 
+     position: absolute;
+        z-index: 1;
+        color: white;
+        margin-top: 15%;
+        margin-left:1019px
     }
 }
 
-@media (min-width: 1920px) {
-    .nav_text {
+ 
+ .hometext {
         position: absolute;
         z-index: 1;
         color: white;
         margin-top: 15%;
         margin-left: 50%
+} 
+
+
+@media (min-width: 1300px) {
+    .contactus {
+        margin-top: 5%;
+        margin-left: 45%;
     }
+
 }
 
 @media (min-width: 1920px) {
@@ -45,11 +62,30 @@
     }
 
 }
+ 
+@media (min-width: 1300px) {
+    .address {
+        margin-top: 3%;
+        margin-left: 35%;
+    }
 
+}
 @media (min-width: 1920px) {
     .address {
         margin-top: 3%;
         margin-left: 40%;
+    }
+
+}
+
+
+
+@media (min-width: 1300px) {
+    .numail {
+        color: black;
+        text-decoration: none;
+        margin-top: 6%;
+        margin-left: 45%;
     }
 
 }
@@ -64,9 +100,7 @@
 
 }
 
-
-
-
+ 
 .list {
     margin-top: 2%;
     margin-left: 15%;
