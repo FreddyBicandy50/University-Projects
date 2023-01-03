@@ -397,7 +397,7 @@
 
 }
 @media (min-width: 1300px) { 
-    .btn_position{
+    .btn_position1{
             color: #fff;
             position: relative;
             text-transform: capitalize;
@@ -415,7 +415,7 @@
     } 
 }
 @media (min-width: 1920px) { 
-    .btn_position{
+    .btn_position1{
             color: #fff;
             position: relative;
             text-transform: capitalize;
@@ -432,16 +432,16 @@
             margin-left: 420px;
     } 
 }
-.btn_position.active,
-.btn_position:hover,
-.btn_position:focus {
+.btn_position1.active,
+.btn_position1:hover,
+.btn_position1:focus {
     color: #fff;
     height: 52px;
     line-height: 36px;
     font-weight: bold;
 }
 
-.btn_position:before {
+.btn_position1:before {
     content: " ";
     position: absolute;
     top: 0;
@@ -452,7 +452,7 @@
     z-index: -1;
 }
 
-.btn_position:after {
+.btn_position1:after {
     content: " ";
     position: absolute;
     top: 0;
@@ -473,18 +473,207 @@
     z-index: -1;
 }
 
-.btn_position.active:after,
-.btn_position:hover:after,
-.btn_position:focus:after {
+.btn_position1.active:after,
+.btn_position1:hover:after,
+.btn_position1:focus:after {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
 }
 
-.btn_position:focus,
-.form-control:focus {
+.btn_position1:focus,
+.form-control1:focus {
     box-shadow: none !important;
 }
 
-.btn_position-icon {
+.btn_position1-icon {
+    padding: 0.5rem 0.9rem;
+}
+
+
+
+@media (min-width: 1300px) { 
+    .btn_position2{
+            color: rgb(0, 0, 0);
+            position: relative;
+            text-transform: capitalize;
+            border: 0;
+            border-radius: 0;
+            padding: 0.5rem 1.792rem;
+            overflow: hidden;
+            height: 52px;
+            line-height: 36px;
+            font-weight: bold;
+            z-index: 0;
+            width: 10%;
+            margin-top: -30px;
+            margin-left: 47%;
+    } 
+}
+@media (min-width: 1920px) { 
+    .btn_position2{
+            color: #fff;
+            position: relative;
+            text-transform: capitalize;
+            border: 0;
+            border-radius: 0;
+            padding: 0.5rem 1.792rem;
+            overflow: hidden;
+            height: 52px;
+            line-height: 36px;
+            font-weight: bold;
+            z-index: 0;
+            width: 10%;
+            margin-top: -25px;
+            margin-left: 42%;
+    } 
+}
+
+.btn_position2.active,
+.btn_position2:hover,
+.btn_position2:focus {
+    color: #fff;
+    height: 52px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.btn_position2:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: -1;
+}
+
+.btn_position2:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.btn_position2.active:after,
+.btn_position2:hover:after,
+.btn_position2:focus:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn_position2:focus,
+.form-control2:focus {
+    box-shadow: none !important;
+}
+
+.btn_position2-icon {
+    padding: 0.5rem 0.9rem;
+}
+
+@media (min-width: 1300px) { 
+    .btn_position3{
+            color: #fff;
+            position: relative;
+            text-transform: capitalize;
+            border: 0;
+            border-radius: 0;
+            padding: 0.5rem 1.792rem;
+            overflow: hidden;
+            height: 52px;
+            line-height: 36px;
+            font-weight: bold;
+            z-index: 0;
+            width: 10%;
+            margin-top: -68px;
+            margin-left: 69%;
+    } 
+}
+@media (min-width: 1920px) { 
+    .btn_position3{
+            color: #fff;
+            position: relative;
+            text-transform: capitalize;
+            border: 0;
+            border-radius: 0;
+            padding: 0.5rem 1.792rem;
+            overflow: hidden;
+            height: 52px;
+            line-height: 36px;
+            font-weight: bold;
+            z-index: 0;
+            width: 10%;
+            margin-top: -78px;
+            margin-left: 62%;
+    } 
+}
+.btn_position3.active,
+.btn_position3:hover,
+.btn_position3:focus {
+    color: #fff;
+    height: 52px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.btn_position3:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #B50909;
+    z-index: -1;
+}
+
+.btn_position3:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+
+.btn_position3.active:after,
+.btn_position3:hover:after,
+.btn_position3:focus:after {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn_position3:focus,
+.form-control3:focus {
+    box-shadow: none !important;
+}
+
+.btn_position3-icon {
     padding: 0.5rem 0.9rem;
 }
