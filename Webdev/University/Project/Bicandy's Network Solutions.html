@@ -17,13 +17,14 @@
         defer></script>
     <script src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/JS/slider.js"
         defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-    <div id="header">
+    <div data-aos-delay="500" data-aos="fade-down" id="header">
         <div id="headinside">
-            <div class="dropdown" data-dropdown>
+            <div data-aos="fade-left"  class="dropdown" data-dropdown>
                 <a id="contact" href="tel:+96179131124" Style="right: 10px;">Call Now+96179131124</a>
                 <button class="dropdown_button" data-dropdown-button>
                     <b class="dropdown_button" data-dropdown-button>My Account ▼</b> </button>
@@ -54,8 +55,8 @@
         </div>
     </div>
 
-    <div id="navbar">
-        <a
+    <div id="navbar"> 
+        <a data-aos="fade-right"
             href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/Bicandy's%20Network%20Solutions.html">
             <img id="Logo"
                 src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/logo.png"
@@ -63,19 +64,19 @@
         <div id="navinside">
             <a class="nav_btn"
                 href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Files/thanks.html">
-                <h3 id="Shop">Shop</h3>
+                <h3 data-aos-delay="500" data-aos="fade-down" id="Shop">Shop</h3>
             </a>
             <a class="nav_btn"
                 href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/Contact.html">
-                <h3 id="Contact">Contact</h3>
+                <h3 data-aos-delay="500" data-aos="fade-down" id="Contact">Contact</h3>
             </a>
             <a class="nav_btn"
                 href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/About.html">
-                <h3 id="About">About</h3>
+                <h3 data-aos-delay="500" data-aos="fade-down"id="About">About</h3>
             </a>
+            
         </div>
-    </div>
-
+    </div> 
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
@@ -85,7 +86,7 @@
                 src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/imageslider1.jpg"
                 alt="image slider 1">
             <h1>
-                <marquee onMouseOver="this.start()" delay="90" scrollamount="20" behavior="slide" direction="up">Join
+                <marquee data-aos-delay="1500" data-aos="fade-up" scrollamount="20" behavior="slide" direction="up">Join
                     Bicandy Network Solutions today <br> for the
                     Best Quality Internet Experience</marquee>
             </h1>
@@ -106,12 +107,11 @@
             <img style="opacity: 0.6"
                 src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/imageslider3.jpg"
                 alt="image slider 3">
-            <h1 style="margin-left: 5% !important">
-                <marquee>
+            <h1 style="margin-left: 5% !important"> 
+                <marquee > 
                     Fiber Optics Connection that can reach speeds of <br>
-                    up to 940 Megabits per second.
+                    up to 940 Megabits per second. 
                 </marquee>
-
             </h1>
         </div>
 
@@ -129,7 +129,7 @@
     </div>
 
     <div id="theme1">
-        <div id="Corporate_box">
+        <div   data-aos="fade-up" id="Corporate_box">
             <image src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/server.png"
                 class="center_icon" alt="server  icon">
             </image>
@@ -144,7 +144,7 @@
             </font>
 
         </div>
-        <div id="Residantal_box">
+        <div   data-aos="fade-up" id="Residantal_box">
             <image src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/download.png"
                 class="center_icon" alt="service icon"></image>
             <h3 align="center">
@@ -157,20 +157,20 @@
             </p>
             </font>
         </div>
-        <div id="Fiber_box">
+        <div   data-aos="fade-up" id="Fiber_box">
             <image src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/fiber.png"
                 class="center_icon" alt="fiber icon"></image>
             <h3 align="center">
-                Energy Fiber
+                Fiber
             </h3>
             <br>
             <p align="center">
-                <font size="3px" ;face="arial">With Energy Bridge get ultrahigh speed internet <br>service. Contact us
+                <font size="3px" ;face="arial">With BNS get ultrahigh speed internet <br>service. Contact us
                     to check availability in your area.
             </p>
             </font>
         </div>
-        <div id="support_box">
+        <div    data-aos="fade-up" id="support_box">
             <image src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/customer.png"
                 class="center_icon" alt="customer support icon"></image>
             <h3 align="center">
@@ -182,16 +182,16 @@
                     client support.
                 </font>
         </div>
-        <div id="Service_details_box">
+        <div   data-aos="fade-up" id="Service_details_box">
             <h1 align="center">
                 <font size="14" color="white">We are the no.1 Quality service <br> provider company in the Country
                 </font>
             </h1>
 
-            <p align="center">
+            <p   data-aos="fade-up" align="center">
                 <font size="4px" color="white">
                     <br>
-                    Energy Bridge is dedicated in providing high quality services to professionals with <br> delicate
+                    Bicandy's Network Solutions  is dedicated in providing high quality services to professionals with <br> delicate
                     needs In the Business,
                     Gaming and Residential sectors. We do not only <br> focus on the mass coverage of the basic market
                     needs, we also integrate
@@ -205,28 +205,39 @@
         </div>
     </div>
     <div id="available_Sevices">
-        <h1 style="position:absolute;color:white; margin-left:40%;margin-top:5%">Services We Provide
+        <h1  data-aos="fade-up" style="position:absolute;color:white; margin-left:40%;margin-top:5%">Services We Provide
         </h1>
-        <p style="position:absolute;color:white; margin-left:38%;margin-top:8%">Choose from below the service that best
+        <p data-aos="fade-up" style="position:absolute;color:white; margin-left:38%;margin-top:8%">Choose from below the service that best
             fits your needs</p>
         <image class="serviceimg_center"
             src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/services.png">
         </image>
     </div>
-    <div id="plans_box">
+    <div data-aos="fade-up" id="plans_box">
+        
         <image class="plansimage"
             src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/plans.png">
+           <a style="text-decoration:none" href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/inquire.html"><div class="btn_position" class="btn">
+            <p align="center"> Order This Plan </p>
+        </div></a> 
         </image>
     </div>
 
     <div id="white">
-        <image class="includeimage"
+        <image data-aos="fade-up" class="includeimage"
             src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/include.png">
         </image>
     </div>
      
     <a href='#'><img style="width: 3%" class="scrolltop" src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/arrowup.png"></img></a>
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000
+    });
+</script>
 </body>
 
 

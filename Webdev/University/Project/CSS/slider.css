@@ -15,6 +15,9 @@
 
 .mySlides>img {
     width: 100%;
+    margin-top: 1%;
+    
+
 }
 @media (min-width: 1300px) {
     .mySlides>h1 {
@@ -28,8 +31,7 @@
 @media (min-width: 1900px) {
     .mySlides>h1 {
         margin-top: -288px;
-        color: white;
-        margin-left: 20%;
+        color: white; 
         text-shadow: 2px 2px 4px rgb(114, 4, 4);
         font-size: 60px;
     }
