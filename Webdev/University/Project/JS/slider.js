@@ -4,7 +4,21 @@ showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
-}
+  
+    slides[slideIndex-1].classList.remove('active');
+    slides[slideIndex-1].style.opacity = 0;
+    slides[slideIndex-1].style.display = 'none';
+    slides[slideIndex-1].style.zIndex = 0;
+
+    // ...
+
+    slides[slideIndex-1].classList.add('active');
+    slides[slideIndex-1].style.display = 'block';
+    slides[slideIndex-1].style.zIndex = 1;
+} 
+var slideInterval = setInterval(function() {
+  plusSlides(1);
+}, 3000); // transition every 5 seconds
 
 // Thumbnail image controls
 function currentSlide(n) {
