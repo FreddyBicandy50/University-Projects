@@ -194,5 +194,13 @@
 }
 
 
-
- 
+@media (min-width: 1300px) {
+    .aa{
+        margin-left:-3px;
+    }
+}
+@media (min-width: 1920px) {
+    .aa{
+        margin-left:4px;
+    }
+}
