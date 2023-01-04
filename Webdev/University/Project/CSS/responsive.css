@@ -1,16 +1,3 @@
-/*============================================
-
-[Table of content]
-
-1. Extra large container
-2. Large devices (less than 1200px)
-3. Large tablets (less than  992px)
-4. Medium devices (less than  768px)
-5. Small devices (less than  576px)
-
-============================================*/
-
-
 /* 1. Extra large container */
 @media (min-width: 1220px) {
     .container {
