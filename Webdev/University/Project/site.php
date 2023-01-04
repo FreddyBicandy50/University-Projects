@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-    <link rel="stylesheet"type="text/css"
-            href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/header.css">
-        <link rel="stylesheet" type="text/css"
-            href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/home.css">
-        <link rel="stylesheet" type="text/css"
-            href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/slider.css">
-        <script src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/JS/script.js"
-            defer></script>
-        <script src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/JS/slider.js"
-            defer></script>
-        <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--CSS Style-->
+    <link rel="stylesheet"
+        href="http://localhost:3000/Webdev/University/Project/header.css">
+    <link rel="stylesheet">
+    <script src="http://localhost:3000/Webdev/University/Project/login.js"
+        defer></script> 
 </head>
 
-  
 <body>
-  
-        <?php 
-            include "Bicandy's Network Solutions.html" ;
-            include "img/logo.png" ;
-        ?>
-        <style>
-            <?php     
-                include "CSS/header.css";
-                include "CSS/home.css";
-                include "CSS/slider.css";  
-            ?>
-        </style> 
-        
-        <script>
-            <?php
-                include "JS/script.js";
-                include "JS/slider.js";
-            ?>
-        </script> 
+    <?php 
+        $name = "freddy";
+    ?>
+
+    <div style="box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.12);" id="header">
+        <div id="headinside">
+            <div  class="dropdown" data-dropdown>
+                <b class="dropdown_button" data-dropdown-button>
+                    <?php 
+                    print("Welcome $name"); 
+                ?></b> </button> 
+            </div>
+        </div>
+    </div>
+     
+    
 </body>
+
+
+</body>
+
 </html>

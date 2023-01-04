@@ -8,14 +8,14 @@
     <title>About</title>
     <!--CSS Style-->
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/header.css">
+        href="http://localhost:3000/Webdev/University/Project//header.css">
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/home.css">
+        href="http://localhost:3000/Webdev/University/Project//home.css">
     <link rel="stylesheet">
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/Contact.css">
+        href="http://localhost:3000/Webdev/University/Project//Contact.css">
     <link rel="stylesheet">
-    <script src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/JS/script.js"
+    <script src="http://localhost:3000/Webdev/University/Project//script.js"
         defer></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -25,20 +25,20 @@
     <div>
         <h1 data-aos="fade-up" class="center_text" style="margin-top:20%">About</h1>
         <a  
-            href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/Bicandy's%20Network%20Solutions.html">
+            href="http://localhost:3000/Webdev/University/Project/Bicandy's%20Network%20Solutions.php">
             <p style="margin-top:23%" class="hometext"><img style="width:21%"
-                    src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/home.png">
+                    src="http://localhost:3000/Webdev/University/Project//home.png">
                 home/
             </p>
         </a>
 
-        <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/About.html">
+        <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/About.php">
             <p style="margin-top:23%" class="aftershlash">
                 <font class="aa" color="#ff0000">About</font>
             </p>
         </a>
         <img style="width: 100%;"
-            src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/about.png"></img>
+            src="http://localhost:3000/Webdev/University/Project//about.png"></img>
 
     </div> 
     <div style="height:1120px" id="theme1"> 
@@ -82,7 +82,7 @@
      <div class="back-to-top">
     <a href='#'> 
         <img  class="back-to-top"  
-        src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/arrowup.png"> </a>
+        src="http://localhost:3000/Webdev/University/Project//arrowup.png"> </a>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
