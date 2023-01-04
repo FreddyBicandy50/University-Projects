@@ -8,22 +8,22 @@
     <title>Shop</title>
     <!--CSS Style-->
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/bootstrap.min.css">
+        href="http://localhost:3000/Webdev/University/Project/bootstrap.min.css">
     
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/Shop.css">
+        href="http://localhost:3000/Webdev/University/Project/Shop.css">
     
-    <link rel="stylesheet" href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/style.css">
+    <link rel="stylesheet" href="http://localhost:3000/Webdev/University/Project/style.css">
     
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/header.css">
+        href="http://localhost:3000/Webdev/University/Project/header.css">
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/home.css">
+        href="http://localhost:3000/Webdev/University/Project/home.css">
     <link rel="stylesheet">
     <link rel="stylesheet"
-        href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/CSS/Contact.css">
+        href="http://localhost:3000/Webdev/University/Project/Contact.css">
     <link rel="stylesheet">
-    <script src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/JS/script.js"
+    <script src="http://localhost:3000/Webdev/University/Project/script.js"
         defer></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -33,20 +33,20 @@
     <div>
         <h1 data-aos="fade-up" class="center_text">Shop</h1>
         <a
-            href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/Bicandy's%20Network%20Solutions.html">
+            href="http://localhost:3000/Webdev/University/Project/Bicandy's%20Network%20Solutions.php">
             <p class="hometext"><img style="width:21%"
-                    src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/home.png">
+                    src="http://localhost:3000/Webdev/University/Project/home.png">
                 home/
             </p>
         </a>
 
-        <a href="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/inquire.html">
+        <a href="http://localhost:3000/Webdev/University/Project/shop.php">
             <p class="aftershlash" class="cc">
                 <font color="#ff0000">Shop</font>
             </p>
         </a>
         <img style="width: 100%;"
-            src="file://wsl.localhost/kali-linux/home/null/programing/Webdev/University/Project/img/shop.png"></img>
+            src="http://localhost:3000/Webdev/University/Project/shop.png"></img>
 
     </div>
 
