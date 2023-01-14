@@ -28,7 +28,7 @@ public class Test {
         Student student_fill=new Student(id,Firstname,Lastname,Age,Address,input.nextLine());
         student_fill.print();
 
-
+        
 
         input.close();
     }
