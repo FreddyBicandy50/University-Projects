@@ -7,5 +7,6 @@
     "java.project.sourcePaths": [
         "Java/University/CSC213",
         "Java/University"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }

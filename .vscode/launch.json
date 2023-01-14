@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestOOP",
+            "request": "launch",
+            "mainClass": "TestOOP",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
             "name": "Launch Basics",
             "request": "launch",
             "mainClass": "Basics",
