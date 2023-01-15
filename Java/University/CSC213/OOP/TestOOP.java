@@ -1,12 +1,13 @@
+package OOP;
 import java.util.Scanner;
 public class TestOOP{
     public static void main (String[] args){ 
         Scanner input=new Scanner(System.in);
-        /*OOP object=new OOP();
+        OOP object=new OOP();
         int res=object.area(input.nextInt());
-        object.print(res);*/
+        object.print(res);
                 
-        /*OOP students_array[]=new OOP[5];
+        OOP students_array[]=new OOP[5];
         OOP s;
         String name,lastname;
         int age;
@@ -27,7 +28,7 @@ public class TestOOP{
         
         for(int i=0 ; i<3; i++){
             students_array[i].print_student_info();
-        } */      
+        }    
         
         
         input.close();

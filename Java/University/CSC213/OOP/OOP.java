@@ -1,3 +1,4 @@
+package OOP;
 import java.util.Scanner;
 public class OOP {
     String First_name,Last_name;

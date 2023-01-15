@@ -1,5 +1,8 @@
+package OOP;
 import java.util.Scanner;
-public class Test {
+
+import Basics.Student;
+public class PersonTest {
     public static void main (String[]args){
         //Calling OOP Classes
         Scanner input=new Scanner(System.in); 
@@ -13,6 +16,7 @@ public class Test {
         person fill_info=new person(id,Firstname,Lastname,Age,Address);
         fill_info.print(); 
         
+
         // Change PERSON ID using setter
         System.out.print("enter your ID AGAIN: "); 
         id=input.nextInt();
@@ -27,9 +31,7 @@ public class Test {
         System.out.print("\nEnter your Major:"); 
         Student student_fill=new Student(id,Firstname,Lastname,Age,Address,input.nextLine());
         student_fill.print();
-
         
-
         input.close();
     }
 }
