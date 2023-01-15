@@ -26,55 +26,15 @@ public class Medication {
         while (choice!=-1){
             System.out.println(
                 // Display the array by type
-                "Choose Display Options:\n1.Hospital Doctor's\n2.Hospital Nurse's\n4.Hospital Patients \n-1.exit");
+                "Choose Display Options:\n1.Hospital Doctor's\n2.Hospital Nurse's\n3.Hospital Patients On Treatment\n4.Hospital Patients Made Surgery\n5.All \n-1.exit");
             choice=input.nextInt(); 
             print(choice);
+            
         }  
         input.close();  
     }
- 
-    public static void print(int choice){
-        boolean title=true;
-        for (int i = 0; i < people.length; i++) {  
-            switch (choice){
-                case 1:
-                    if (people[i] instanceof Doctor){
-                        if (title) {
-                            System.out.println("\nAll Hospital Doctor's: ");
-                            title=false;
-                        }
-                        Doctor convert=(Doctor) people[i];
-                        System.out.println(convert.print_doctor()+"\n");
-                    } 
-                    break;
-                case 2:
-                    if (people[i] instanceof NightShift) {
-                        NightShift convert = (NightShift) people[i];
-                        System.out.println("NightShift Nurses: " + convert.print_nightshift());
-                    }
-                    if (people[i] instanceof DayShift) {
-                        DayShift convert = (DayShift) people[i];
-                        System.out.println("DayShift Nurses: " + convert.print_dayshift());
-                    }
-                    break;  
-                case 3:
-                    if (people[i] instanceof TreatmentP) {
-                            TreatmentP convert = (TreatmentP) people[i];
-                            System.out.println("Treatments Patients: " + convert.print_treatment());
-                        }
-                    if (people[i] instanceof SurgeryP) {
-                            SurgeryP convert = (SurgeryP) people[i];
-                            System.out.println("Surgery Patients: " + convert.print_surgery());
-                        }
-                    break; 
-                default : 
-                    break; 
-            }
-        }
-    }
     
- 
-    public static void print_all(int choice){
+public static void print(int choice){
         boolean title=true;
         for (int i = 0; i < people.length; i++) {  
             switch (choice){
@@ -89,25 +49,40 @@ public class Medication {
                     } 
                     break;
                 case 2:
+                    if (title) {
+                        System.out.println("\nAll Hospital Nurse's ");
+                        title = false;
+                    }
                     if (people[i] instanceof NightShift) {
                         NightShift convert = (NightShift) people[i];
-                        System.out.println("NightShift Nurses: " + convert.print_nightshift());
+                        System.out.println(convert.print_nightshift()+"\n");
                     }
                     if (people[i] instanceof DayShift) {
                         DayShift convert = (DayShift) people[i];
-                        System.out.println("DayShift Nurses: " + convert.print_dayshift());
+                        System.out.println(convert.print_dayshift()+"\n");
                     }
                     break;  
                 case 3:
                     if (people[i] instanceof TreatmentP) {
+                            if (title) {
+                                System.out.println("\nAll Hospital Patients On Treatment's ");
+                                title = false;
+                            }
                             TreatmentP convert = (TreatmentP) people[i];
-                            System.out.println("Treatments Patients: " + convert.print_treatment());
+                            System.out.println(convert.print_treatment()+"\n");
                         }
+                        break;
+                case 4:
                     if (people[i] instanceof SurgeryP) {
+                            if (title) {
+                                System.out.println("\nAll Patients on Surgery's ");
+                                title = false;
+
+                            }
+
                             SurgeryP convert = (SurgeryP) people[i];
-                            System.out.println("Surgery Patients: " + convert.print_surgery());
-                        }
-                    break; 
+                            System.out.println(convert.print_surgery()+"\n");
+                    }
                 default : 
                     break; 
             }
