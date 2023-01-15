@@ -1,3 +1,6 @@
+package Basics;
+import OOP.person;
+
 public class Student extends person {
  
     private String Major;
