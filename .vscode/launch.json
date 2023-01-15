@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Medication",
+            "request": "launch",
+            "mainClass": "Project.Medication",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
             "name": "Launch draw",
             "request": "launch",
             "mainClass": "draw",
