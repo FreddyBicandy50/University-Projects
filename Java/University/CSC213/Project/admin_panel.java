@@ -41,7 +41,13 @@ public class admin_panel {
         JButton Displaybtn = new JButton("Display");
         Displaybtn.setBounds(300, 115, 120, 25);
         panel.add(Displaybtn);
-
+        // On click on @addbtn
+        Displaybtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                new Display();
+            }
+        });
 
         frame.setVisible(true);
     }
