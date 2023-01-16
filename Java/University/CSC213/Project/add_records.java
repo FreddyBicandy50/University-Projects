@@ -1,6 +1,5 @@
 package Project; 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.*; 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -12,7 +11,7 @@ public class add_records  {
  
     public add_records() {
         //Window Frame
-        frame.setSize(600, 400);
+        frame.setSize(1000, 600);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.add(panel); 
         panel.setLayout(null);
@@ -29,45 +28,46 @@ public class add_records  {
             }          
         });
 
+        //ADD A DOCTOR 
         //@name Field label
-        JLabel nameLabel = new JLabel("Name:");
-        nameLabel.setBounds(10,50,80,25);
-        panel.add(nameLabel);
+        JLabel drnameLabel = new JLabel("Name:");
+        drnameLabel.setBounds(10,50,80,25);
+        panel.add(drnameLabel);
         // name Field input box 
-        JTextField nameField = new JTextField(20);
-        nameField.setText("");
-        nameField.setBounds(60, 50, 150, 25);
-        panel.add(nameField);
+        JTextField drnameField = new JTextField(20);
+        drnameField.setText("");
+        drnameField.setBounds(60, 50, 150, 25);
+        panel.add(drnameField);
         
         //@age Field label 
-        JLabel ageLabel = new JLabel("Age:");
-        ageLabel.setBounds(10,85,80,25);
-        panel.add(ageLabel);
+        JLabel drageLabel = new JLabel("Age:");
+        drageLabel.setBounds(10,85,80,25);
+        panel.add(drageLabel);
         //age Field input box 
-        JTextField ageField = new JTextField(20);
-        ageField.setBounds(60, 85, 150, 25);
-        ageField.setText("");
-        panel.add(ageField);
+        JTextField drageField = new JTextField(20);
+        drageField.setBounds(60, 85, 150, 25);
+        drageField.setText("");
+        panel.add(drageField);
 
         //@id Field label
-        JLabel idLabel = new JLabel("Id:");
-        idLabel.setBounds(10,120,80,25);
-        panel.add(idLabel);
+        JLabel dridLabel = new JLabel("Id:");
+        dridLabel.setBounds(10,120,80,25);
+        panel.add(dridLabel);
         //id Field input box 
-        JTextField idField = new JTextField(20);
-        idField.setBounds(60, 120, 150, 25);
-        idField.setText("");
-        panel.add(idField);
-        
+        JTextField dridField = new JTextField(20);
+        dridField.setBounds(60, 120, 150, 25);
+        dridField.setText("");
+        panel.add(dridField);
+ 
         //@speciality Field Label
-        JLabel specLabel = new JLabel("Speciality:");
-        specLabel.setBounds(10,155,80,25);
-        panel.add(specLabel); 
+        JLabel drspecLabel = new JLabel("Speciality:");
+        drspecLabel.setBounds(10,155,80,25);
+        panel.add(drspecLabel); 
         //speciality Field input box 
-        JTextField specField = new JTextField(20);
-        specField.setBounds(90, 155, 150, 25);
-        specField.setText("");
-        panel.add(specField);  
+        JTextField drspecField = new JTextField(20);
+        drspecField.setBounds(90, 155, 150, 25);
+        drspecField.setText("");
+        panel.add(drspecField);  
 
         // Add doctor button
         JButton add_drbtn = new JButton("Add Doctor");
@@ -83,8 +83,89 @@ public class add_records  {
                 public void actionPerformed(ActionEvent e) { 
                 // if One of the textfileds are empty display an error message 
                 if (
-                    idField.getText().isEmpty() || 
-                    nameField.getText().equals("") || 
+                    dridField.getText().isEmpty() || 
+                    drnameField.getText().equals("") || 
+                    drageField.getText().equals("") ||   
+                    drspecField.getText().equals("")
+                    ){
+                        //display error message
+                        message.setBounds(10, 230, 600, 25);
+                        message.setText("empty Fields");
+                }else{ 
+                        //get values from text fields
+                        int id=Integer.parseInt(dridField.getText());
+                        String name = drnameField.getText(), age = drageField.getText(), spec = drspecField.getText();
+
+                        // Add the doctor to the array database 
+                        Doctor add_dr = new Doctor(name, age, id, spec); 
+                        login.db.add(add_dr);
+                        count++;
+
+                        // Display success message
+                        message.setText("Added Successfully! "+count);
+                }
+                //reset all fileds
+                drnameField.setText("");
+                drageField.setText("");
+                dridField.setText("");
+                drspecField.setText("");
+            }
+        });
+
+
+        //ADD A NURSE
+        //@name Field label
+        JLabel nurse_nameLabel = new JLabel("Name:");
+        nurse_nameLabel.setBounds(600,50,80,25);
+        panel.add(nurse_nameLabel);
+        // name Field input box 
+        JTextField nurse_nameField = new JTextField(20);
+        nurse_nameField.setText("");
+        nurse_nameField.setBounds(620, 50, 150, 25);
+        panel.add(nurse_nameField);
+        
+        //@age Field label 
+        JLabel nurse_ageLabel = new JLabel("Age:");
+        nurse_ageLabel.setBounds(600,85,80,25);
+        panel.add(nurse_ageLabel);
+        //age Field input box 
+        JTextField nurse_ageField = new JTextField(20);
+        nurse_ageField.setBounds(620, 85, 150, 25);
+        nurse_ageField.setText("");
+        panel.add(nurse_ageField);
+
+        //@id Field label
+        JLabel nurse_idLabel = new JLabel("Id:");
+        nurse_idLabel.setBounds(600,120,80,25);
+        panel.add(nurse_idLabel);
+        //id Field input box 
+        JTextField nurse_idField = new JTextField(20);
+        nurse_idField.setBounds(60, 120, 150, 25);
+        nurse_idField.setText("");
+        panel.add(nurse_idField);
+        
+        //@speciality Field Label
+        JLabel nurse_specLabel = new JLabel("Speciality:");
+        nurse_specLabel.setBounds(600,155,80,25);
+        panel.add(nurse_specLabel); 
+        //speciality Field input box 
+        JTextField specField = new JTextField(20);
+        specField.setBounds(90, 155, 150, 25);
+        specField.setText("");
+        panel.add(specField);  
+
+        // Add doctor button
+        JButton add_nrbtn = new JButton("Add Doctor");
+        add_nrbtn.setBounds(20, 190, 120, 25);
+        panel.add(add_nrbtn);  
+
+        // On click @add_dr_Button
+        /*add_nrbtn.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) { 
+                // if One of the textfileds are empty display an error message 
+                if (
+                    nurse_nameLabel.getText().isEmpty() || 
+                    nurse_idField.getText().equals("") || 
                     ageField.getText().equals("") ||   
                     specField.getText().equals("")
                     ){
@@ -109,34 +190,9 @@ public class add_records  {
                 idField.setText("");
                 specField.setText("");
             }
-        });
+        });*/
        
 
-
-        JTextArea Displayarea = new JTextArea("Display Area");
-        Displayarea.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        Displayarea.setBounds(550,170,300,400);
-        Displayarea.setEditable(false);
-        panel.add(Displayarea);
-       JButton displaydr = new JButton("Display Doctors");
-        displaydr.setBounds(150, 190,150,25);
-        panel.add(displaydr);
-        displaydr.addActionListener(new ActionListener() {
-                public void actionPerformed(ActionEvent e) {
-                // Code for handling the add button event
-                    boolean empty=true;
-                    Displayarea.setText("");
-                    for (Person person : login.db) {
-                        if (person instanceof Doctor){
-                            empty=false;
-                            Doctor convert = (Doctor) person;
-                            Displayarea.setText(Displayarea.getText() + convert.print_doctor()+"\n");
-                        }
-                    }
-                    if (empty)
-                        Displayarea.setText("No Records Found!");
-                }
-            });  
 
             frame.setVisible(true);
         

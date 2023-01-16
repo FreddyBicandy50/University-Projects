@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 public class admin_panel { 
     // frame panel
     private static JPanel panel = new JPanel();
-    private static JFrame frame = new JFrame("Admin"); 
+    private static JFrame frame = new JFrame("Hospital Management System"); 
     public admin_panel() {
         // Window Frame 
         frame.setSize(600, 400);
