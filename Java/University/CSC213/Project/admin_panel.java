@@ -17,7 +17,7 @@ public class admin_panel {
 
         // add button
         JButton addbtn = new JButton("Add");
-        addbtn.setBounds(150, 80, 120, 25);
+        addbtn.setBounds(0, 0, 260, 160);
         panel.add(addbtn);
         // On click on @addbtn
         addbtn.addActionListener(new ActionListener() {
@@ -29,17 +29,17 @@ public class admin_panel {
         
         // Modify button
         JButton Modifybtn = new JButton("Modify");
-        Modifybtn.setBounds(300, 80, 120, 25);
+        Modifybtn.setBounds(260, 0, 265, 160);
         panel.add(Modifybtn); 
 
         // remove button
         JButton removebtn = new JButton("remove");
-        removebtn.setBounds(150, 115, 120, 25);
+        removebtn.setBounds(0, 160, 260, 160);
         panel.add(removebtn); 
 
         // Display button
         JButton Displaybtn = new JButton("Display");
-        Displaybtn.setBounds(300, 115, 120, 25);
+        Displaybtn.setBounds(260, 160, 265, 160);
         panel.add(Displaybtn);
         // On click on @addbtn
         Displaybtn.addActionListener(new ActionListener() {
@@ -47,8 +47,7 @@ public class admin_panel {
                 frame.dispose();
                 new Display();
             }
-        });
-
+        });  
         frame.setVisible(true);
     }
 
