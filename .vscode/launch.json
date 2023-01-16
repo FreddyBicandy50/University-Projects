@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PersonTest",
+            "request": "launch",
+            "mainClass": "OOP.PersonTest",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch login",
+            "request": "launch",
+            "mainClass": "Project.login",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "Project.test",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
             "name": "Launch GIUI",
             "request": "launch",
             "mainClass": "Project.GIUI",
