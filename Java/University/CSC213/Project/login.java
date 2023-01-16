@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class login  { 
     //frame panel
     private static JPanel panel = new JPanel();
-    private static JFrame frame = new JFrame("Login");  
+    private static JFrame frame = new JFrame("Hospital Management System");  
     public static ArrayList<Person> db = new ArrayList<Person>();
     public login() {
 
