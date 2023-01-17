@@ -42,16 +42,16 @@ public class add_records  {
             }          
         }); 
         
-        ADD_Doctor();
-        ADD_Nurse();
-        ADD_Ptreatments();
-        ADD_PSurgery();
+        ModifyDoctor();
+        ModifyNurse();
+        ModifyPtreatments();
+        ModifyPSurgery();
        // ADD_Patient_Surgery();
         frame.setVisible(true);
         
          
     }
-    public void ADD_Doctor(){
+    public void ModifyDoctor(){
         // ADD A DOCTOR
         // @name Field label
         JLabel  nameLabel = new JLabel("Name:");
@@ -113,8 +113,9 @@ public class add_records  {
                     // get values from text fields
                     String name =  nameField.getText();
                     String age =  ageField.getText();
-                    int id = Integer.parseInt( idField.getText());
+                    int id = Integer.parseInt(idField.getText());
                     String spec =  specField.getText();
+
 
                     // Add the doctor to the array database
                     login.db.add(new Doctor(name, age, id, spec));
@@ -133,7 +134,7 @@ public class add_records  {
             }
         });
     }
-    public void ADD_Nurse(){
+    public void ModifyNurse(){
         // ADD A NURSE
         // @name Field label
         JLabel  nameLabel = new JLabel("Name:");
@@ -258,7 +259,7 @@ public class add_records  {
             }
         });
     }
-    public void ADD_Ptreatments(){
+    public void ModifyPtreatments(){
         // ADD Patients On treatments
         // @name Field label
         JLabel  nameLabel = new JLabel("Name:");
@@ -361,7 +362,7 @@ public class add_records  {
             }  
           }); 
     }
-    public void ADD_PSurgery(){
+    public void ModifyPSurgery(){
         // ADD Patients On treatments
         // @name Field label
         JLabel  nameLabel = new JLabel("Name:");
