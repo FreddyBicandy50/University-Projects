@@ -1,5 +1,13 @@
-package Project; 
+package Project.GIUI; 
 import javax.swing.*;
+
+import Project.OOP.DayShift;
+import Project.OOP.Doctor;
+import Project.OOP.NightShift;
+import Project.OOP.Person;
+import Project.OOP.SurgeryP;
+import Project.OOP.TreatmentP;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener; 
 import java.awt.Font; 

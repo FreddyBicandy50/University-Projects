@@ -1,4 +1,4 @@
-package Project;
+package Project.OOP;
 
 public class TreatmentP extends Patient implements Hospital{
     // Variables

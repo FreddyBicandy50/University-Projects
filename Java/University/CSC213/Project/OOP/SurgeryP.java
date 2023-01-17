@@ -1,4 +1,5 @@
-package Project; 
+package Project.OOP;
+
 public class SurgeryP extends Patient implements Hospital{
     //Variables 
     private String Surgerytype;
