@@ -1,4 +1,4 @@
-package Project;
+package Project.OOP;
 
 public class NightShift extends Nurse {
     // Variables 

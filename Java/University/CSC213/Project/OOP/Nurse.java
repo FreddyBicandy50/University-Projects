@@ -1,4 +1,4 @@
-package Project;
+package Project.OOP;
 
 public class Nurse extends Person{
     // Variables

@@ -1,4 +1,5 @@
-package Project; 
+package Project.OOP;
+
 public class Patient extends Person{
     //Variables
     private int id;

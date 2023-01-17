@@ -1,6 +1,7 @@
-package Project;
+package Project.GIUI;
 
-import javax.swing.*; 
+import javax.swing.*;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener; 
 

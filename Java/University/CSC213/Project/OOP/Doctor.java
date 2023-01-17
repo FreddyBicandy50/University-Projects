@@ -1,4 +1,5 @@
-package Project; 
+package Project.OOP;
+
 public class Doctor extends Person implements Hospital {
     // Variables
     private int id;
