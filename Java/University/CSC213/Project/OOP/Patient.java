@@ -1,22 +1,19 @@
 package Project.OOP;
 
 public class Patient extends Person{
-    //Variables
-    private int id;
+    //Variables 
     private String date,time;
 
     //Default Constructor
     public Patient() {
         super();
         date="";
-        time="";
-        id=0;
+        time=""; 
     }
 
     //paramitarized Constructor
     public Patient(String name, String age,int id,String date,String time) {
-        super(name,age);
-        this.id=id;
+        super(name,age,id); 
         this.date=date;
         this.time=time;
     }
@@ -31,6 +28,6 @@ public class Patient extends Person{
 
     // printing
     public String print_patient() {
-        return super.print_person()+"\nid:"+this.id+"\ndate:"+this.date+"\ntime:"+this.time;
+        return super.print_person()+"\ndate:"+this.date+"\ntime:"+this.time;
     }
 }
