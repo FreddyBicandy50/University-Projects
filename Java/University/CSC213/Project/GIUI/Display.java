@@ -52,7 +52,7 @@ public class Display {
 
         display_doctor();
         display_nurse();
-        display_ptreatment();
+        display_patients();
         
         frame.setVisible(true);
     }
@@ -70,7 +70,7 @@ public class Display {
                     if (person instanceof Doctor) {
                         empty = false;
                         Doctor convert = (Doctor) person;
-                        Displayarea.setText(Displayarea.getText() + "\n" + convert.print_doctor() + "\n:"+convert.getMedication()+"\n");
+                        Displayarea.setText(Displayarea.getText() + "\n" + convert.print_doctor() + "\n"+convert.getMedication()+"\n");
                     }
                 }
                 if (empty) Displayarea.setText("No Records Found!");
@@ -103,7 +103,7 @@ public class Display {
             }
         });
     }
-    public void display_ptreatment(){ 
+    public void display_patients(){ 
         // Nurse
         JButton display = new JButton("Display Patients");
         display.setBounds(1120, 895, 800, 130);
@@ -129,4 +129,5 @@ public class Display {
             }
         });
     }
+  
 }

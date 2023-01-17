@@ -37,7 +37,13 @@ public class admin_panel {
         JButton removebtn = new JButton("remove");
         removebtn.setBounds(0, 160, 260, 160);
         panel.add(removebtn); 
-
+        // On click on @addbtn
+        removebtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                new remove_record();
+            }
+        });    
         // Display button
         JButton Displaybtn = new JButton("Display");
         Displaybtn.setBounds(260, 160, 265, 160);
