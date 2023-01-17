@@ -2,7 +2,12 @@ package Project.GIUI;
 
 import javax.swing.*;
 
+import Project.OOP.DayShift;
+import Project.OOP.Doctor;
+import Project.OOP.NightShift;
 import Project.OOP.Person;
+import Project.OOP.SurgeryP;
+import Project.OOP.TreatmentP;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -54,7 +59,8 @@ public class login  {
         loginbtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {  
                 if(getusername.getText().equals("admin") 
-                    && new String(passwordField.getPassword()).equals("123")){     
+                    && new String(passwordField.getPassword()).equals("123")){      
+                    record();
                     frame.dispose();
                     new admin_panel();
                 }else{
@@ -64,7 +70,24 @@ public class login  {
                 }
             }
         }); 
-        
         frame.setVisible(true);
     } 
+    public void record(){
+        db.add(new Doctor("Ahmad", "40", 4050, "orthopedic"));
+        db.add(new Doctor("Adnan", "45", 4100, "cardiology"));
+        db.add(new Doctor("Ibrahim", "39", 4300, "oncology"));
+        
+        // Nurse's
+        db.add(new NightShift("Rony", "19", 1011, "Mar Roukoz", "10:00PM", "Wed-Tue-Fri"));
+        db.add(new DayShift("Charlie", "35", 1041, "Mar Doumit","8:00AM", "Mon-Thu-Sa"));
+        
+        // Treatment's
+        db.add(new TreatmentP("David", "40", 325, "Nov-15-2023", "12:00AM", "Antidepressants"));
+        db.add(new TreatmentP("Emily", "60", 315, "Nov-10-2023", "1:00PM", "Sugar"));
+        
+        // Surgery's
+        db.add(new SurgeryP("Henry", "50", 615, "jan-24-2023", "8:50PM", "orthopedic"));
+        db.add(new SurgeryP("Isabella", "12", 675, "Nov-10-2023", "1:00PM", "appendectomy")); 
+        db.add(new SurgeryP("Grace", "55", 685, "Feb-14-2023", "9:58PM", "anesthesia"));
+    }
 }

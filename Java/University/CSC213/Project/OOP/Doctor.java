@@ -19,7 +19,7 @@ public class Doctor extends Person implements Hospital {
     public String getSpec() { return this.Spec;}
 
     // setters 
-    public void setSurgerytype(String Spec) {this.Spec=Spec;}
+    public void setSpec(String Spec) {this.Spec=Spec;}
 
     // Implementation of the getMedication() method  
     @Override

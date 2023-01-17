@@ -11,7 +11,7 @@ public class remove_record {
     // frame panel
     private static JPanel panel = new JPanel();
     private static JFrame frame = new JFrame("Hospital Management System");
-    private static JLabel message = new JLabel("");;
+    private static JLabel message = new JLabel("");
     private static JTextField remove_byid = new JTextField(20);
 
     public remove_record() {
@@ -38,8 +38,8 @@ public class remove_record {
             }
         }); 
 
-        remove(); 
-        // ADD_Patient_Surgery();
+        remove();  
+        
         frame.setVisible(true);
 
     }
