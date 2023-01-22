@@ -21,7 +21,9 @@ public class TreatmentP extends Patient implements Hospital{
 
     // setters
     public void setTreatmenttype(String Treatmenttype) {this.Treatmenttype = Treatmenttype;}
-
+    
+    
+    // return mediaction by Treatment type
     @Override
     public String getMedication() {
         if (Treatmenttype.equals("Antidepressants")) return "serotonin";

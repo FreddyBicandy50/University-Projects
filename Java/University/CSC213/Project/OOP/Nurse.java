@@ -17,7 +17,7 @@ public class Nurse extends Person{
 
     // getters 
     public String getDepartment() {return this.Department;}
- 
+    
     // setters 
     public void setDepartment(String Department) {this.Department=Department;}
 

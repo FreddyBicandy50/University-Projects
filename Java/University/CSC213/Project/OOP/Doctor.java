@@ -21,7 +21,7 @@ public class Doctor extends Person implements Hospital {
     // setters 
     public void setSpec(String Spec) {this.Spec=Spec;}
 
-    // Implementation of the getMedication() method  
+    // return medications based on Dr Specialty
     @Override
     public String getMedication() {
         return "Medications for " + this.Spec + " are :" + getMedicationsBySpecialty(this.Spec);

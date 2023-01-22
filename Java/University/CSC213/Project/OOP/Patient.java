@@ -1,9 +1,8 @@
 package Project.OOP;
-
 public class Patient extends Person{
     //Variables 
     private String date,time;
-
+    
     //Default Constructor
     public Patient() {
         super();

@@ -20,7 +20,6 @@ public class DayShift extends Nurse{
 
     // getters
     public String getTime() {return this.Time;}
-
     public String getDate() {return this.Shift;}
 
     // setters

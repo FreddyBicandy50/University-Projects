@@ -20,7 +20,7 @@ public class SurgeryP extends Patient implements Hospital{
     //setters
     public void setSurgerytype(String Surgerytype) {this.Surgerytype=Surgerytype;}  
     
-    //Implementation of the getMedication() method
+    //Return medication by  surgery type
     @Override
     public String getMedication() {
         if (Surgerytype.equals("orthopedic")) return "fentanyl";
