@@ -25,7 +25,6 @@ public class NightShift extends Nurse {
     // setters
     public void setTime(String Time) {this.Time=Time;}
     public void setShift(String Shift) {this.Shift=Shift;}
- 
 
     // priting
     public String print_nightshift() {

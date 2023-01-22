@@ -1,5 +1,2 @@
 package Project.OOP;
-
-public interface Hospital {
-   public abstract String getMedication();
-}
+public interface Hospital {public abstract String getMedication();}
