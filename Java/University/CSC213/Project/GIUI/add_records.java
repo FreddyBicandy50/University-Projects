@@ -18,7 +18,7 @@ public class add_records  {
 
         // Call Functions
         Add_buttons(); 
-        //AddDoctor();
+        AddDoctor();
         //AddNurse();
         //AddPtreatments();
         //AddPSurgery(); 
