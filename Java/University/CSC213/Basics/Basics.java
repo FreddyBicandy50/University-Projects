@@ -13,7 +13,7 @@ public class Basics{
 
         System.out.print("enter a number:");
         int integer=input.nextInt();
-
+        
         System.out.print("enter your name:");
         String Multi_char = input.nextLine(); 
         
