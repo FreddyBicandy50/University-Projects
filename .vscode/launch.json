@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Basics",
+            "request": "launch",
+            "mainClass": "Basics.Basics",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array_list",
+            "request": "launch",
+            "mainClass": "Basics.Array_list",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestOOP",
+            "request": "launch",
+            "mainClass": "OOP.TestOOP",
+            "projectName": "programing_926a01e5"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Project.Main",
