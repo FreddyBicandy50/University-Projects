@@ -1,0 +1,78 @@
+     .whitepage {
+         position: absolute;
+         z-index: 999;
+         background-color: #f5f7fa;
+         height: 200%;
+         width: 100%;
+     }
+
+     .sign_in_area {
+         background-color: white;
+         box-shadow: 0 5px 5px 5px rgba(211, 212, 217, .8);
+         margin-left: 28%;
+         margin-top: 8%;
+         height: 40%;
+         width: 45%;
+     }
+     .back_user_info_area {
+        position: absolute;
+         background-color: #f5f7fa;
+         box-shadow: 0 5px 5px 5px rgba(211, 212, 217, .8);
+         margin-left: 6%;
+         margin-top: 5%;
+         height: 75%;
+         width: 90%;
+     }
+     .user_info_area {  
+        background-color: #fafafb;
+        margin-top: 10% !important;
+        box-shadow: 0 5px 5px 5px rgba(211, 212, 217, .8);
+        margin-left: 2%;
+        margin-top: 2% !important;
+        height: 90%;
+        width: 95%; 
+     }
+     .phpstyle {  
+        margin-left: 5%;
+        color: #b50909
+     }
+     li {   
+        color: #404e67;
+        margin-top: 4%;
+     }
+
+     
+
+     .formposition {
+         position: absolute;
+         z-index: 999;
+         margin-left: 9%;
+         margin-top: 18%;
+         height: 3%;
+         width: 35%;
+         border-radius: .25rem;
+     }
+
+     hr {
+         width: 110%;
+         border-radius: .25rem;
+     }
+
+@media (min-width: 1300px) {
+     .donut{
+            background-color: #fafafb;
+            margin-left: 45%;
+            margin-top: -320;
+            width: 45%;
+            height: 80%;
+     }
+}
+@media (min-width: 1920px) {
+     .donut{
+            background-color: #fafafb;
+            margin-left: 48%;
+            margin-top: -420;
+            width: 45%;
+            height: 80%;
+     }
+}
