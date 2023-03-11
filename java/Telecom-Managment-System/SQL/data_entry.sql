@@ -1,80 +1,82 @@
---TABLE customer_details
-    --cust_id.nextval->for sequance function (AUTO_INCREMENT)
-USE Telecom_db; 
-INSERT INTO customer_details (name, age, gender)
+--TABLE customer_details DATA
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
 VALUES ('Michael Smith', 19, 'Male');
-
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Matthew Anderson',25,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'John Hammond',37,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Nicolas Milani',18,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Elizabeth Shelbey',65,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Richard Daoud',33,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Tiffany Andreas',21,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Jacob Braidy',19,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Christine Hourany',20,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Anna-Maria Sarkis',20,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Joelle Mazraani',23,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'George Milani',65,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Raymond Al-Ashkar',55,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Alex Waked',45,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Dana Naayme',35,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Gabriel Bou-Mirchid',39,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Edmond Raphaelle',28,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Susan Nassour',24,'Female');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Nassir Njem',37,'Male');
-INSERT INTO customer_details 
-VALUES(cust_id.nextval,'Alan Dergham',52,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES ('Michael Smith', 19, 'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender) 
+VALUES('Matthew Anderson',25,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('John Hammond',37,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Nicolas Milani',18,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Elizabeth Shelbey',65,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Richard Daoud',33,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Tiffany Andreas',21,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Jacob Braidy',19,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Christine Hourany',20,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Anna-Maria Sarkis',20,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Joelle Mazraani',23,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('George Milani',65,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Raymond Al-Ashkar',55,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Alex Waked',45,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Dana Naayme',35,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+VALUES('Gabriel Bou-Mirchid',39,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+VALUES('Edmond Raphaelle',28,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+VALUES('Susan Nassour',24,'Female');
+INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+VALUES('Nassir Njem',37,'Male');
+INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+VALUES('Alan Dergham',52,'Male');
 
 --TABLE numbers  
-INSERT INTO numbers VALUES('79-131-124','Y','prepaid',502022020);
-INSERT INTO numbers VALUES('76-731-118','Y','postpaid',502022014);
-INSERT INTO numbers VALUES('71-464-798','N','prepaid',502022010);
-INSERT INTO numbers VALUES('78-803-512','Y','prepaid',502022009);
-INSERT INTO numbers VALUES('81-723-758','Y','postpaid',502022015);
-INSERT INTO numbers VALUES('70-012-078','N','prepaid',502022017);
-INSERT INTO numbers VALUES('81-645-497','Y','prepaid',502022005);
-INSERT INTO numbers VALUES('71-821-786','Y','postpaid',502022016);
-INSERT INTO numbers VALUES('81-289-269','Y','postpaid',502022012);
-INSERT INTO numbers VALUES('71-602-881','Y','prepaid',502022008);
-INSERT INTO numbers VALUES('71-083-147','Y','prepaid',502022011);
-INSERT INTO numbers VALUES('71-524-830','N','postpaid',502022003);
-INSERT INTO numbers VALUES('03-280-963','Y','prepaid',502022002);
-INSERT INTO numbers VALUES('71-668-808','Y','postpaid',502022001);
-INSERT INTO numbers VALUES('03-586-479','Y','postpaid',502022019);
-INSERT INTO numbers VALUES('81-454-129','N','prepaid',502022004);
-INSERT INTO numbers VALUES('79-319-987','Y','postpaid',502022006);
-INSERT INTO numbers VALUES('79-156-264','Y','prepaid',502022018);
-INSERT INTO numbers VALUES('81-857-016','Y','prepaid',502022007);
-INSERT INTO numbers VALUES('03-126-885','N','postpaid',502022020);
-INSERT INTO numbers VALUES('81-466-456','Y','postpaid',502022009);
-INSERT INTO numbers VALUES('71-234-123','N','prepaid',502022014);
-INSERT INTO numbers VALUES('76-563-224','Y','postpaid',502022016);
-INSERT INTO numbers VALUES('78-336-983','Y','prepaid',502022011);
-INSERT INTO numbers VALUES('79-687-573','Y','postpaid',502022004);
-INSERT INTO numbers VALUES('78-235-541','N','prepaid',502022001);
-INSERT INTO numbers VALUES('03-754-583','Y','postpaid',502022020);
-INSERT INTO numbers VALUES('76-194-163','Y','postpaid',502022020);
-INSERT INTO numbers VALUES('78-135-634','Y','prepaid',502022020);
-INSERT INTO numbers VALUES('76-965-676','N','prepaid',502022018);
-INSERT INTO numbers VALUES('03-566-468','Y','postpaid',502022007);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('79-131-124',1,'prepaid',1);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('76-731-118',1,'postpaid',2);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-464-798',0,'prepaid',3);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('78-803-512',1,'prepaid',3);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-723-758',1,'postpaid',4);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('70-012-078',0,'prepaid',5);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-645-497',1,'prepaid',6);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-821-786',1,'postpaid',7);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-289-269',1,'postpaid',8);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-602-881',1,'prepaid',9);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-083-147',1,'prepaid',10);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-524-830',0,'postpaid',11);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-280-963',1,'prepaid',12);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-668-808',1,'postpaid',13);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-586-479',1,'postpaid',14);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-454-129',0,'prepaid',15);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('79-319-987',1,'postpaid',16);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('79-156-264',1,'prepaid',17);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-857-016',1,'prepaid',18);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-126-885',0,'postpaid',1);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('81-466-456',1,'postpaid',3);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('71-234-123',0,'prepaid',2);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('76-563-224',1,'postpaid',7);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('78-336-983',1,'prepaid',10);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('79-687-573',1,'postpaid',15);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('78-235-541',0,'prepaid',13);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-754-583',1,'postpaid',1);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('76-194-163',1,'postpaid',1);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('78-135-634',1,'prepaid',1);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('76-965-676',0,'prepaid',17);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-566-468',1,'postpaid',19);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-566-468',1,'postpaid',19);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('03-879-660',1,'postpaid',20);
+INSERT INTO `Telecom_db`.`Numbers` VALUES('78-884-124',1,'postpaid',21);
 
 
 --Table Services
