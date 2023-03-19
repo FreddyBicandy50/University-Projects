@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Projects_4108a640"
+        },
+        {
+            "type": "java",
+            "name": "sort",
+            "request": "launch",
+            "mainClass": "sort",
+            "projectName": "Projects_4108a640"
+        },
+        {
+            "type": "java",
             "name": "Launch Advanced",
             "request": "launch",
             "mainClass": "Basics.Advanced",
