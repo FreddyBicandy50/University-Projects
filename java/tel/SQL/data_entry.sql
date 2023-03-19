@@ -1,82 +1,81 @@
 --TABLE customer_details DATA
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES ('Michael Smith', 19, 'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
-VALUES ('Michael Smith', 19, 'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender) 
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender) 
 VALUES('Matthew Anderson',25,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('John Hammond',37,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Nicolas Milani',18,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Elizabeth Shelbey',65,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Richard Daoud',33,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Tiffany Andreas',21,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Jacob Braidy',19,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Christine Hourany',20,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Anna-Maria Sarkis',20,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Joelle Mazraani',23,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('George Milani',65,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Raymond Al-Ashkar',55,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Alex Waked',45,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Dana Naayme',35,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(Full_name, Age, Gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, Age, Gender)
 VALUES('Gabriel Bou-Mirchid',39,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, age, gender)
 VALUES('Edmond Raphaelle',28,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, age, gender)
 VALUES('Susan Nassour',24,'Female');
-INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, age, gender)
 VALUES('Nassir Njem',37,'Male');
-INSERT INTO `Telecom_db`.`customer_details`(full_name, age, gender)
+INSERT INTO Telecom_db.customer_details(Full_Name, age, gender)
 VALUES('Alan Dergham',52,'Male');
 
 --TABLE numbers  
-INSERT INTO `Telecom_db`.`Numbers` VALUES('79-131-124',1,'prepaid',1);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('76-731-118',1,'postpaid',2);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-464-798',0,'prepaid',3);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('78-803-512',1,'prepaid',3);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-723-758',1,'postpaid',4);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('70-012-078',0,'prepaid',5);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-645-497',1,'prepaid',6);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-821-786',1,'postpaid',7);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-289-269',1,'postpaid',8);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-602-881',1,'prepaid',9);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-083-147',1,'prepaid',10);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-524-830',0,'postpaid',11);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-280-963',1,'prepaid',12);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-668-808',1,'postpaid',13);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-586-479',1,'postpaid',14);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-454-129',0,'prepaid',15);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('79-319-987',1,'postpaid',16);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('79-156-264',1,'prepaid',17);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-857-016',1,'prepaid',18);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-126-885',0,'postpaid',1);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('81-466-456',1,'postpaid',3);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('71-234-123',0,'prepaid',2);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('76-563-224',1,'postpaid',7);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('78-336-983',1,'prepaid',10);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('79-687-573',1,'postpaid',15);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('78-235-541',0,'prepaid',13);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-754-583',1,'postpaid',1);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('76-194-163',1,'postpaid',1);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('78-135-634',1,'prepaid',1);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('76-965-676',0,'prepaid',17);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-566-468',1,'postpaid',19);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-566-468',1,'postpaid',19);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('03-879-660',1,'postpaid',20);
-INSERT INTO `Telecom_db`.`Numbers` VALUES('78-884-124',1,'postpaid',21);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) 
+VALUES('79-131-124',1,'prepaid',85);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('76-731-118',1,'postpaid',86);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-464-798',0,'prepaid',87);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('78-803-512',1,'prepaid',87);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-723-758',1,'postpaid',88);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('70-012-078',0,'prepaid',89);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-645-497',1,'prepaid',90);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-821-786',1,'postpaid',91);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-289-269',1,'postpaid',92);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-602-881',1,'prepaid',93);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-083-147',1,'prepaid',94);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-524-830',0,'postpaid',95);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-280-963',1,'prepaid',96);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-668-808',1,'postpaid',97);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-586-479',1,'postpaid',98);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-454-129',0,'prepaid',99);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('79-319-987',1,'postpaid',100);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('79-156-264',1,'prepaid',101);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-857-016',1,'prepaid',102);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-126-885',0,'postpaid',85);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('81-466-456',1,'postpaid',87);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('71-234-123',0,'prepaid',86);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('76-563-224',1,'postpaid',91);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('78-336-983',1,'prepaid',94);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('79-687-573',1,'postpaid',99);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('78-235-541',0,'prepaid',97);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-754-583',1,'postpaid',85);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('76-194-163',1,'postpaid',85);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('78-135-634',1,'prepaid',85);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('76-965-676',0,'prepaid',101);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-566-468',1,'postpaid',103);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-566-468',1,'postpaid',103);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('03-879-660',1,'postpaid',104);
+INSERT INTO Telecom_db.`Numbers`(SIM_Number, Active, Type,Cust_id) VALUES('78-884-124',1,'postpaid',104);
 
 
 --Table Services
@@ -84,7 +83,7 @@ INSERT INTO `Telecom_db`.`Numbers` VALUES('78-884-124',1,'postpaid',21);
 INSERT INTO Services ("name",cost,subscribers,date_subscribed)
 VALUES('Clip Alert',0.5,'71-234-123',TO_DATE('05/03/2022', 'DD/MM/YYYY'));
 INSERT INTO Services ("name",cost,subscribers,date_subscribed)
-VALUES('Clip Alert',0.5,'03-566-468',TO_DATE('14/8/2022', 'DD/MM/YYYY'));
+VALUES('Clip Alert',0.5,'03-566-468',TO_DATE('98/8/2022', 'DD/MM/YYYY'));
 INSERT INTO Services ("name",cost,subscribers,date_subscribed)
 VALUES('Clip Alert',0.5,'78-235-541',TO_DATE('30/01/2022', 'DD/MM/YYYY'));
 INSERT INTO Services ("name",cost,subscribers,date_subscribed)
@@ -117,7 +116,7 @@ VALUES('PRIVATE',3.0,'78-135-634',TO_DATE('09/01/2022', 'DD/MM/YYYY'));
 INSERT INTO plan ("name",cost,subscribers,date_subscribed)
 VALUES('U-CHAT 9',9.0,'79-156-264',TO_DATE('14/04/2022', 'DD/MM/YYYY'));
 INSERT INTO plan ("name",cost,subscribers,date_subscribed)
-VALUES('U-CHAT 9',9.0,'71-234-123',TO_DATE('11/10/2022', 'DD/MM/YYYY'));
+VALUES('U-CHAT 9',9.0,'71-234-123',TO_DATE('95/10/2022', 'DD/MM/YYYY'));
 INSERT INTO plan ("name",cost,subscribers,date_subscribed)
 VALUES('U-CHAT 9',9.0,'81-454-129',TO_DATE('09/09/2022', 'DD/MM/YYYY'));
 INSERT INTO plan ("name",cost,subscribers,date_subscribed)

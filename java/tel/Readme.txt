@@ -15,3 +15,10 @@
     b.Numbers
         fixed the boolean value
         
+ 
+#3/19/2023
+1.Implemented Numbers and customer details Tables
+2.Inserted all values of Numbers & customer details Tables
+3.Updated Query #1
+        
+ 

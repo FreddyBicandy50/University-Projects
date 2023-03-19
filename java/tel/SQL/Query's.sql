@@ -1,28 +1,14 @@
---Display all customers having more one number line
-SELECT 
-    customer_details.full_name,numbers."number",numbers.Type
-FROM 
-    customer_details
-INNER JOIN 
-    numbers
-ON 
-    customer_details.cust_id = numbers.customer_id
-WHERE 
-    numbers.customer_id IN 
-    (
-        SELECT 
-            numbers.customer_id
-        FROM 
-            customer_details
-        INNER JOIN 
-            numbers
-        ON 
-            customer_details.cust_id = numbers.customer_id
-        GROUP BY 
-            numbers.customer_id
-        HAVING 
-            COUNT(*)>1
-    )
+--#1 Display all customers having more one number line
+SELECT customer_details.Full_Name, Numbers.SIM_Number, Numbers.Type
+FROM Telecom_db.customer_details 
+INNER JOIN Telecom_db.Numbers ON customer_details.Customer_ID = Numbers.cust_id
+WHERE Numbers.cust_id IN (
+  SELECT Numbers.cust_id 
+  FROM Telecom_db.customer_details 
+  INNER JOIN Telecom_db.Numbers ON customer_details.Customer_ID = Numbers.cust_id
+  GROUP BY Numbers.cust_id
+  HAVING COUNT(*) > 1
+)
 ORDER BY 1;
 
 --display all active numbers and plan name of customers age between 18 27 Having PRIVATE Service Enabled
