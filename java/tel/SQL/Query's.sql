@@ -12,44 +12,30 @@ WHERE Numbers.cust_id IN (
 ORDER BY 1;
 
 --display all active numbers and plan name of customers age between 18 27 Having PRIVATE Service Enabled
-SELECT 
-    DISTINCT plan.subscribers,plan."name" AS "Active Plan",Services."name" AS "Services"
-FROM 
-    Services,plan
-INNER JOIN 
-    numbers
-ON 
-    numbers."number"=plan.subscribers
-WHERE 
-    plan.subscribers IN 
+
+SELECT DISTINCT plan.Subscribers,plan.Plan_Name AS "Active Plan",Services.Name AS "Services"
+FROM Telecom_db.Services,Telecom_db.plan
+INNER JOIN Telecom_db.Numbers
+ON  Numbers.SIM_Number=plan.Subscribers
+WHERE plan.Subscribers IN 
     (
-        SELECT 
-            Services.subscribers
-        FROM 
-            Services
-        INNER JOIN 
-            numbers
-        ON 
-            numbers."number"=Services.subscribers
-        WHERE 
-            numbers.active='Y' AND Services."name"='PRIVATE' 
+        SELECT  Services.Subscribers
+        FROM  Telecom_db.Services
+        INNER JOIN  Telecom_db.Numbers
+        ON  Numbers.SIM_Number=Services.Subscribers
+        WHERE Numbers.Active=1 AND Services.Name='PRIVATE' 
     )
 AND 
-    plan.subscribers IN 
+    plan.Subscribers IN 
     (
-        SELECT 
-            numbers."number"
+        SELECT Numbers.SIM_Number
         FROM 
-            customer_details
-        INNER JOIN 
-            numbers
-        ON 
-            numbers.customer_id=customer_details.cust_id
-        WHERE 
-            customer_details.age BETWEEN 18 AND 27
+            Telecom_db.customer_details
+        INNER JOIN Telecom_db.Numbers
+        ON  Numbers.cust_id=customer_details.Customer_ID
+        WHERE customer_details.Age BETWEEN 18 AND 27
     )
-AND 
-    Services."name"='PRIVATE';
+AND Services.Name='PRIVATE';
 
 --display all records for international calls and message made before 'July 2022'
 SELECT 

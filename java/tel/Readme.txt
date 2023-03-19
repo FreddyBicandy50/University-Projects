@@ -17,8 +17,8 @@
         
  
 #3/19/2023
-1.Implemented Numbers and customer details Tables
-2.Inserted all values of Numbers & customer details Tables
-3.Updated Query #1
+1.Created Tables (Numbers,customer_details,Services,Plan)
+2.Inserted all values Tables
+3.Updated Query #1 & #2
         
  
