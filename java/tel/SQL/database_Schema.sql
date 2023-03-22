@@ -38,21 +38,18 @@ CREATE TABLE Telecom_db.plan (
     REFERENCES Numbers(SIM_Number)
 ); 
 
-  
-CREATE TABLE Telecom_db.Call_logs (
-     Call_datentime TIMESTAMP NOT NULL, 
+CREATE TABLE Telecom_db.Call_logs ( 
      Number_Called CHAR(11) NOT NULL,
-     Number_Received CHAR(11) NOT NULL,
+     Start_Time TIMESTAMP NOT NULL, 
      country_code CHAR(5),
-    `duration` DATE NOT NULL,
-    Termination_type CHAR(25) NOT NULL,
-    CONSTRAINT pk_composite PRIMARY KEY (Call_datentime,Number_Called),
-    CONSTRAINT fk_number_called FOREIGN KEY (Number_Called)
-    REFERENCES Numbers(SIM_Number)
-);
-
---SELECT DATE_FORMAT(NOW(), 'YYYY-MM-DD HH24:MI:SS');
-  
+     Number_Received CHAR(11) NOT NULL,
+     End_Time TIMESTAMP NOT NULL,
+     Termination_type INT NOT NULL,
+     CONSTRAINT pk_composite PRIMARY KEY (Start_Time,Number_Called),
+     CONSTRAINT fk_number_called FOREIGN KEY (Number_Called)
+     REFERENCES Numbers(SIM_Number)
+);  
+ 
 CREATE TABLE Telecom_db.`SMS/MMS_logs` (
      Country_code CHAR(5),
      Number_sent CHAR(11) NOT NULL,
