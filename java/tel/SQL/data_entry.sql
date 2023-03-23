@@ -170,47 +170,34 @@ VALUES
     '+1','42-633-365',STR_TO_DATE('19/07/2023 14:35:10','%d/%m/%Y %H:%i:%s'),101);
 
 --SMS/Logs
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+INSERT INTO Telecom_db."SMS/MMS_logs"
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES 
+    ('71-524-830','+961','81-454-129',STR_TO_DATE('25/09/2023 10:00:00','%d/%m/%Y %H:%i:%s'),'MMS',49.0);
+INSERT INTO Telecom_db."SMS/MMS_logs", 
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('71-524-830',STR_TO_DATE('25/09/2023 10:00:00','%d/%m/%Y %H:%i:%s'),
-    '+961','81-454-129','MMS',49.0);
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+    ('71-083-147','+961','79-156-264',STR_TO_DATE('12/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),'SMS',0.1);
+INSERT INTO Telecom_db."SMS/MMS_logs", 
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('71-083-147',STR_TO_DATE('12/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),
-    '+961','79-156-264','SMS',0.1);
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+    ('03-280-963','+961','03-586-479',STR_TO_DATE('19/12/2023 21:00:10','%d/%m/%Y %H:%i:%s'),'SMS',0.5); 
+INSERT INTO Telecom_db."SMS/MMS_logs", 
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('03-280-963',STR_TO_DATE('19/12/2023 21:00:10','%d/%m/%Y %H:%i:%s'),
-    '+961','03-586-479','SMS',0.5); 
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+    ('79-319-987','+961','70-012-078',STR_TO_DATE('18/04/2023 9:30:00','DD/MM/YYYY HH24:MI:SS'),'SMS',8.0);
+INSERT INTO Telecom_db."SMS/MMS_logs", 
+(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('79-319-987',STR_TO_DATE('18/04/2023 9:30:00','DD/MM/YYYY HH24:MI:SS'),
-    '+961','70-012-078','SMS',8.0);
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+    ('71-821-786','+1','42-633-365',STR_TO_DATE('21/08/2023 13:45:10','DD/MM/YYYY HH24:MI:SS'),'MMS',13.5);
+INSERT INTO Telecom_db."SMS/MMS_logs", 
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('71-821-786',STR_TO_DATE('21/08/2023 13:45:10','DD/MM/YYYY HH24:MI:SS'),'+1','42-633-365','MMS',13.5);
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
+('81-289-269','+1','90-58848946',STR_TO_DATE('14/03/2023 07:15:00','DD/MM/YYYY HH24:MI:SS'),'MMS',68.5);
+INSERT INTO Telecom_db."SMS/MMS_logs" 
+    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
 VALUES
-    ('81-289-269',STR_TO_DATE('14/03/2023 07:15:00','DD/MM/YYYY HH24:MI:SS'),
-    '+1','90-58848946','MMS',68.5);
-INSERT INTO "SMS/MMS_logs" 
-    (number_sent,"Date/time",country_code,number_received,"Message Type",
-    "Message Size")
-VALUES
-    ('76-965-676',STR_TO_DATE('11/06/2023 08:10:21','DD/MM/YYYY HH24:MI:SS'),
-    '+963','89-618-465','MMS',90.5);
+('76-965-676','+963','89-618-465',STR_TO_DATE('11/06/2023 08:10:21','DD/MM/YYYY HH24:MI:SS'),'MMS',90.5);
 
 
 --Table Billings
@@ -225,21 +212,21 @@ VALUES ('71-821-786',STR_TO_DATE('21/08/2023','DD/MM/YYYY'),
         (
             --checking if user sent and sms or mms to calculate fees 
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             --if true the total cost will be returned
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 
@@ -316,20 +303,20 @@ VALUES
         SELECT DISTINCT CASE WHEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 
@@ -407,20 +394,20 @@ VALUES
         SELECT DISTINCT CASE WHEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 
@@ -498,20 +485,20 @@ VALUES
         SELECT DISTINCT CASE WHEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 
@@ -589,20 +576,20 @@ VALUES
         SELECT DISTINCT CASE WHEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 
@@ -680,20 +667,20 @@ VALUES
         SELECT DISTINCT CASE WHEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         ) IS NOT NULL 
         THEN 
         (
             SELECT
-            CASE WHEN "Message Type" ='SMS' 
-            THEN "Message Size"*0.2 
-            ELSE "Message Size"*1.2 END
+            CASE WHEN Message_Type ='SMS' 
+            THEN Message_Size*0.2 
+            ELSE Message_Size*1.2 END
             FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".number_sent=:number_check
+            WHERE  "SMS/MMS_logs".Number_sent=:number_check
         )
         ELSE 0 
         END 

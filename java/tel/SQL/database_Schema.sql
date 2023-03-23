@@ -51,15 +51,15 @@ CREATE TABLE Telecom_db.Call_logs (
 );  
  
 CREATE TABLE Telecom_db.`SMS/MMS_logs` (
-     Country_code CHAR(5),
      Number_sent CHAR(11) NOT NULL,
+     Country_code CHAR(5),
      Number_Received CHAR(11) NOT NULL,
-    `Date/time` TIMESTAMP NOT NULL,
-    `Message Type` CHAR(3) NOT NULL,
-    `Message Size` FLOAT NOT NULL,
+     Sent_Date TIMESTAMP NOT NULL,
+     Message_Type CHAR(3) NOT NULL,
+     Message_Size FLOAT NOT NULL,
     CONSTRAINT fk_number_sent FOREIGN KEY (Number_sent)
     REFERENCES Numbers(SIM_Number)
-);   
+);    
 
 CREATE TABLE Telecom_db.Billings (
     Recharge_date DATE NOT NULL,
