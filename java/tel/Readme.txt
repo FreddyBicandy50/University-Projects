@@ -28,3 +28,10 @@
 
         
  
+#3/23/2023
+2.Inserted values Tables (SMS_Logs)
+3.removed all of the Billing table data we will do it inside the app itself 
+
+
+        
+ 
