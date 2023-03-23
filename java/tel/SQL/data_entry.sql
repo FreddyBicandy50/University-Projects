@@ -144,608 +144,67 @@ VALUES('71-602-881','U-CHAT 17',17.0,STR_TO_DATE('06/07/2023','%d/%m/%Y'));
 --Telecom_db.Call_logs 
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES 
-('03-586-479',STR_TO_DATE('10/03/2023 12:30:35','%d/%m/%Y %H:%i:%s'),'+961','71-524-830',STR_TO_DATE('10/03/2023 12:45:59','%d/%m/%Y %H:%i:%s'),404);
+    (
+        '03-586-479',STR_TO_DATE('10/03/2023 12:30:35','%d/%m/%Y %H:%i:%s'),'+961','71-524-830',
+        STR_TO_DATE('10/03/2023 12:45:59','%d/%m/%Y %H:%i:%s'),404
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES 
-    ('71-821-786',STR_TO_DATE('12/03/2023 8:10:25','%d/%m/%Y %H:%i:%s'),'+961','78-135-634',STR_TO_DATE('12/03/2023 8:12:05','%d/%m/%Y %H:%i:%s'),404);
+    (
+        '71-821-786',STR_TO_DATE('12/03/2023 8:10:25','%d/%m/%Y %H:%i:%s'),'+961','78-135-634',
+         STR_TO_DATE('12/03/2023 8:12:05','%d/%m/%Y %H:%i:%s'),404
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES
-    ('76-194-163',STR_TO_DATE('24/03/2023 09:30:07','%d/%m/%Y %H:%i:%s'),
-    '+961','78-235-541',STR_TO_DATE('24/03/2023 09:40:55','%d/%m/%Y %H:%i:%s'),404);
+    (
+        '76-194-163',STR_TO_DATE('24/03/2023 09:30:07','%d/%m/%Y %H:%i:%s'),'+961','78-235-541',
+         STR_TO_DATE('24/03/2023 09:40:55','%d/%m/%Y %H:%i:%s'),404
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES
-    ('03-754-583',STR_TO_DATE('15/03/2023 1:30:15','%d/%m/%Y %H:%i:%s'),
-    '+961','71-215-568',STR_TO_DATE('15/03/2023 1:48:53','%d/%m/%Y %H:%i:%s'),101);
+    (
+        '03-754-583',STR_TO_DATE('15/03/2023 1:30:15','%d/%m/%Y %H:%i:%s'),'+961','71-215-568',
+         STR_TO_DATE('15/03/2023 1:48:53','%d/%m/%Y %H:%i:%s'),101
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES
-    ('81-857-016',STR_TO_DATE('24/06/2023 2:30:15','%d/%m/%Y %H:%i:%s'),
-    '+7','3-59874548',STR_TO_DATE('24/06/2023 2:44:06','%d/%m/%Y %H:%i:%s'),101);
+    (
+        '81-857-016',STR_TO_DATE('24/06/2023 2:30:15','%d/%m/%Y %H:%i:%s'),'+7','3-59874548',
+         STR_TO_DATE('24/06/2023 2:44:06','%d/%m/%Y %H:%i:%s'),101
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES
-    ('79-156-264',STR_TO_DATE('05/06/2023 2:30:15','%d/%m/%Y %H:%i:%s'),
-    '+1','91-59969739',STR_TO_DATE('05/06/2023 3:20:00','%d/%m/%Y %H:%i:%s'),101);
+    (
+        '79-156-264',STR_TO_DATE('05/06/2023 2:30:15','%d/%m/%Y %H:%i:%s'),'+1','91-59969739',
+         STR_TO_DATE('05/06/2023 3:20:00','%d/%m/%Y %H:%i:%s'),101
+    );
 INSERT INTO Telecom_db.Call_logs (number_called,Start_Time,country_code,number_received,End_Time,Termination_type)
 VALUES
-    ('81-454-129',STR_TO_DATE('19/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),
-    '+1','42-633-365',STR_TO_DATE('19/07/2023 14:35:10','%d/%m/%Y %H:%i:%s'),101);
+    (
+        '81-454-129',STR_TO_DATE('19/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),'+1','42-633-365',
+         STR_TO_DATE('19/07/2023 14:35:10','%d/%m/%Y %H:%i:%s'),101
+    );
 
 --SMS/Logs
-INSERT INTO Telecom_db."SMS/MMS_logs"
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES 
-    ('71-524-830','+961','81-454-129',STR_TO_DATE('25/09/2023 10:00:00','%d/%m/%Y %H:%i:%s'),'MMS',49.0);
-INSERT INTO Telecom_db."SMS/MMS_logs", 
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-    ('71-083-147','+961','79-156-264',STR_TO_DATE('12/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),'SMS',0.1);
-INSERT INTO Telecom_db."SMS/MMS_logs", 
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-    ('03-280-963','+961','03-586-479',STR_TO_DATE('19/12/2023 21:00:10','%d/%m/%Y %H:%i:%s'),'SMS',0.5); 
-INSERT INTO Telecom_db."SMS/MMS_logs", 
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-    ('79-319-987','+961','70-012-078',STR_TO_DATE('18/04/2023 9:30:00','DD/MM/YYYY HH24:MI:SS'),'SMS',8.0);
-INSERT INTO Telecom_db."SMS/MMS_logs", 
-(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-    ('71-821-786','+1','42-633-365',STR_TO_DATE('21/08/2023 13:45:10','DD/MM/YYYY HH24:MI:SS'),'MMS',13.5);
-INSERT INTO Telecom_db."SMS/MMS_logs", 
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-('81-289-269','+1','90-58848946',STR_TO_DATE('14/03/2023 07:15:00','DD/MM/YYYY HH24:MI:SS'),'MMS',68.5);
-INSERT INTO Telecom_db."SMS/MMS_logs" 
-    (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
-VALUES
-('76-965-676','+963','89-618-465',STR_TO_DATE('11/06/2023 08:10:21','DD/MM/YYYY HH24:MI:SS'),'MMS',90.5);
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES('71-524-830','+961','81-454-129',STR_TO_DATE('25/09/2023 10:00:00','%d/%m/%Y %H:%i:%s'),'MMS',49.0);
+
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES('71-083-147','+961','79-156-264',STR_TO_DATE('12/07/2023 13:45:10','%d/%m/%Y %H:%i:%s'),'SMS',0.1);   
+
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES('03-280-963','+961','03-586-479',STR_TO_DATE('19/12/2023 21:00:10','%d/%m/%Y %H:%i:%s'),'SMS',0.5); 
+
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES ('79-319-987','+961','70-012-078',STR_TO_DATE('18/04/2023 9:30:00','%d/%m/%Y %H:%i:%s'),'SMS',8.0);
+
+INSERT INTO Telecom_db.`SMS/MMS_logs` (Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES ('71-821-786','+1','42-633-365',STR_TO_DATE('21/08/2023 13:45:10','%d/%m/%Y %H:%i:%s'),'MMS',13.5);
+
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES ('81-289-269','+1','90-58848946',STR_TO_DATE('14/03/2023 07:15:00','%d/%m/%Y %H:%i:%s'),'MMS',68.5);
+
+INSERT INTO Telecom_db.`SMS/MMS_logs`(Number_sent,country_code,number_received,Sent_Date,Message_Type,Message_Size)
+VALUES ('76-965-676','+963','89-618-465',STR_TO_DATE('11/06/2023 08:10:21','%d/%m/%Y %H:%i:%s'),'MMS',90.5);
 
 
---Table Billings
---Define varaible for numbers
-var number_check CHAR(11);
-exec :number_check :='71-821-786';
-INSERT INTO Billings (recharged_number,recharge_date,Total_cost)
-VALUES ('71-821-786',STR_TO_DATE('21/08/2023','DD/MM/YYYY'),
-    (
-        --Checking if Nested query return NULL if true return 0 for calcualtions
-        SELECT DISTINCT CASE WHEN 
-        (
-            --checking if user sent and sms or mms to calculate fees 
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            --if true the total cost will be returned
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-var number_check CHAR(11);
-exec :number_check :='71-234-123';
-INSERT INTO Billings
-    (recharged_number,recharge_date,Total_cost)
-VALUES 
-    ('71-234-123',STR_TO_DATE('12/06/2023','DD/MM/YYYY'),
-    (
-        SELECT DISTINCT CASE WHEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-
-var number_check CHAR(11);
-exec :number_check :='81-857-016';
-INSERT INTO Billings
-    (recharged_number,recharge_date,Total_cost)
-VALUES 
-    ('81-857-016',STR_TO_DATE('02/04/2023','DD/MM/YYYY'),
-    (
-        SELECT DISTINCT CASE WHEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-
-var number_check CHAR(11);
-exec :number_check :='03-586-479';
-INSERT INTO Billings
-    (recharged_number,recharge_date,Total_cost)
-VALUES 
-    ('03-586-479',STR_TO_DATE('09/10/2023','DD/MM/YYYY'),
-    (
-        SELECT DISTINCT CASE WHEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-
-var number_check CHAR(11);
-exec :number_check :='81-289-269';
-INSERT INTO Billings
-    (recharged_number,recharge_date,Total_cost)
-VALUES 
-    ('81-289-269',STR_TO_DATE('14/07/2023','DD/MM/YYYY'),
-    (
-        SELECT DISTINCT CASE WHEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-
-var number_check CHAR(11);
-exec :number_check :='71-083-147';
-INSERT INTO Billings
-    (recharged_number,recharge_date,Total_cost)
-VALUES 
-    ('71-083-147',STR_TO_DATE('29/01/2023','DD/MM/YYYY'),
-    (
-        SELECT DISTINCT CASE WHEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        ) IS NOT NULL 
-        THEN 
-        (
-            SELECT
-            CASE WHEN Message_Type ='SMS' 
-            THEN Message_Size*0.2 
-            ELSE Message_Size*1.2 END
-            FROM "SMS/MMS_logs"
-            WHERE  "SMS/MMS_logs".Number_sent=:number_check
-        )
-        ELSE 0 
-        END 
-        AS Total_message_cost 
-        FROM "SMS/MMS_logs"
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.Call_logs."duration")
-                    FROM Telecom_db.Call_logs
-                    WHERE Telecom_db.Call_logs.number_called=:number_check
-                    GROUP BY Telecom_db.Call_logs.number_called
-                )
-            ELSE 0 
-            END 
-            AS Calculate_Total_Cost 
-            FROM Telecom_db.Call_logs
-        )+
-        (
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM  Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Services.cost)
-                    FROM    Services
-                    WHERE Services.subscribers=:number_check
-                    GROUP BY Services.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_Subs_Services_cost
-            FROM Services
-        )+(
-            SELECT DISTINCT CASE WHEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM    Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                ) IS NOT NULL 
-            THEN 
-                (
-                    SELECT SUM(Telecom_db.plan.cost)
-                    FROM Telecom_db.plan
-                    WHERE Telecom_db.plan.subscribers=:number_check
-                    GROUP BY Telecom_db.plan.subscribers
-                )
-            ELSE 0 
-            END 
-            AS Total_plan_cost
-            FROM Telecom_db.plan
-        )
-    );
-
-SELECT * FROM "SMS/MMS_logs";

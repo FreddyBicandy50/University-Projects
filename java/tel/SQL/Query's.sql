@@ -11,7 +11,7 @@ WHERE Numbers.cust_id IN (
 )
 ORDER BY 1;
 
---display all active numbers and plan name of customers age between 18 27 Having PRIVATE Service Enabled
+--#2display all active numbers and plan name of customers age between 18 27 Having PRIVATE Service Enabled
 
 SELECT DISTINCT plan.Subscribers,plan.Plan_Name AS "Active Plan",Services.Name AS "Services"
 FROM Telecom_db.Services,Telecom_db.plan
@@ -37,26 +37,26 @@ AND
     )
 AND Services.Name='PRIVATE';
 
---display all records for international calls and message made before 'July 2022'
-SELECT 
-    call_logs.number_called,call_logs.country_code,
-    call_logs.number_received,call_logs."Date/time"
+--#3display all records for international calls and message made before 'July 2023'
+SELECT
+    Call_logs.Number_Called,Call_logs.country_code,
+    Call_logs.Number_Received,Call_logs.Start_Time
 FROM 
-    call_logs
+    Telecom_db.Call_logs
 WHERE 
-    call_logs."Date/time" < TO_DATE('01/07/2022','DD/MM/YYYY')
+    Call_logs.Start_Time < STR_TO_DATE('01/07/2023','%d/%m/%Y')
     AND
-    call_logs.country_code <> '+961'  
+    Call_logs.country_code <> '+961'  
 UNION
 SELECT 
-    "SMS/MMS_logs".number_sent,"SMS/MMS_logs".country_code,
-    "SMS/MMS_logs".number_received,"SMS/MMS_logs"."Date/time"
+    `SMS/MMS_logs`.Number_sent,`SMS/MMS_logs`.country_code,
+    `SMS/MMS_logs`.number_received,`SMS/MMS_logs`.Sent_Date
 FROM  
-    "SMS/MMS_logs"
+    Telecom_db.`SMS/MMS_logs`
 WHERE  
-        "SMS/MMS_logs"."Date/time" < TO_DATE('01/07/2022','DD/MM/YYYY')
+        `SMS/MMS_logs`.Sent_Date < STR_TO_DATE('01/07/2023','%d/%m/%Y')
     AND 
-        "SMS/MMS_logs".country_code <> '+961'
+        `SMS/MMS_logs`.country_code <> '+961'
 ORDER BY 4;
 
 
