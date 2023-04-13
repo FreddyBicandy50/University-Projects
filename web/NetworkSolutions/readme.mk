@@ -1,4 +1,4 @@
-Website Project
+#Website Project
 This is a website project that utilizes HTML/CSS, JavaScript, PHP, and MySQL. The website is designed to [insert purpose of website here].
 
 Prerequisites
