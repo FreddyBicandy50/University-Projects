@@ -1,6 +1,6 @@
 <?php  
     if (isset($_POST["email"])&& isset($_POST["pswd"])){
-        $file_contents = file_get_contents('http://localhost/Project/INVALID.html');
+        $file_contents = file_get_contents('http://localhost/Projects/web/NetworkSolutions/INVALID.html');
         eval('?>' . $file_contents);
          $firstname=$_POST["first_name"];
                 $lastname=$_POST["last_name"];
@@ -35,7 +35,7 @@
         mysqli_query($db_connect,$query)or die(mysqli_error($db_connect));  
         mysqli_close($db_connect); 
     }
-   
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,9 +49,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--CSS Style-->
-    <link rel="stylesheet" href="http://localhost/Project/CSS/header.css">
-    <link rel="stylesheet" href="http://localhost/Project/CSS/home.css">
-    <link rel="stylesheet" href="http://localhost/Project/CSS/Contact.css">
+    <link rel="stylesheet" href="http://localhost/Projects/web/NetworkSolutions/CSS/header.css">
+    <link rel="stylesheet" href="http://localhost/Projects/web/NetworkSolutions/CSS/home.css">
+    <link rel="stylesheet" href="http://localhost/Projects/web/NetworkSolutions/CSS/Contact.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
@@ -62,21 +62,21 @@
         <!--Inquire Page TITLE-->
         <h1 data-aos="fade-up" class="center_text">Inquire</h1> 
         <!--Home Page Link-->
-        <a href="http://localhost/Project/BNS.php">
+        <a href="http://localhost/Projects/web/NetworkSolutions/home.html">
             <p class="hometext">
-                <img style="width:21%" src="http://localhost/Project/img/home.png">
+                <img style="width:21%" src="http://localhost/Projects/web/NetworkSolutions/img/home.png">
                 home/
             </p>
         </a>
 
         <!--Inquire Page Link-->
-        <a href="http://localhost/Project/Inquire.php">
+        <a href="http://localhost/Projects/web/NetworkSolutions/php/Inquire.php">
             <p class="aftershlash">
                 <font color="#ff0000">Inquire</font>
             </p>
         </a>
         <!--Inquire img-->
-        <img style="width: 100%;" src="http://localhost/Project/img/inquire.png"></img>
+        <img style="width: 100%;" src="http://localhost/Projects/web/NetworkSolutions/img/inquire.png"></img>
         
     </div>
     

@@ -1,5 +1,5 @@
 <?php
-    $db_connect=mysqli_connect("localhost","root","cS[I5f*lbdc4!D26","Clients");  
+    $db_connect=mysqli_connect("localhost","BNS","cS[I5f*lbdc4!D26","Clients");  
     $username=$_POST["user_name"];
     $password=$_POST["pwd"];
     
