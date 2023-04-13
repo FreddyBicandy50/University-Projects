@@ -1,12 +1,12 @@
 #Website Project
 This is a website project that utilizes HTML/CSS, JavaScript, PHP, and MySQL. The website is designed to [insert purpose of website here].
 
-Prerequisites
+##Prerequisites
 To run this website on your local machine, you will need the following software installed:
 
-Web Server (e.g. Apache)
-PHP
-MySQL
+*Web Server (e.g. Apache)
+*PHP
+*MySQL
 Installation
 Clone the repository to your local machine.
 Create a MySQL database and import the database.sql file located in the sql folder.
