@@ -1,5 +1,5 @@
 <?php
-    $db_connect=mysqli_connect("localhost","BNS","cS[I5f*lbdc4!D26","Clients");  
+    $db_connect=mysqli_connect("sql304.epizy.com","epiz_34004686","jHBI4eH9zZ2yF85","epiz_34004686_Bns");   
     $username=$_POST["user_name"];
     $password=$_POST["pwd"];
     
