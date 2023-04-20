@@ -1,5 +1,5 @@
 <?php
-    $db_connect=mysqli_connect("sql304.epizy.com","epiz_34004686","jHBI4eH9zZ2yF85","epiz_34004686_Bns");   
+    $db_connect=mysqli_connect("localhost","root","root@1120338#7","epiz_34004686_Bns");   
     $username=$_POST["user_name"];
     $password=$_POST["pwd"];
     
@@ -18,7 +18,7 @@
 
     }
     if (empty($user_info)) {
-        $file_contents = file_get_contents('http://localhost/Project/INVALID.html');
+        $file_contents = file_get_contents('http://localhost/Projects/web/NetworkSolutions//INVALID.html');
         eval('?>' . $file_contents);
         echo '<div style="position:absolute;z-index: 999;background-color: #ffbcc6;margin-left: 30%;margin-top: 20%;height: 3%;width: 40%;border-radius: .25rem;">
                 <p align="center" style="margin-top:1%;margin-left:5%"><font face="arial" color="#c6001b">Error! Your username or password is incorrect.</font></p>
@@ -43,8 +43,8 @@
         <title>
             user panel
         </title>
-        <link rel="stylesheet" href="http://localhost/Project/CSS/header.css">
-        <link rel="stylesheet" href="http://localhost/Project/CSS/server.css">
+        <link rel="stylesheet" href="http://localhost/Projects/web/NetworkSolutions/CSS/header.css">
+        <link rel="stylesheet" href="http://localhost/Projects/web/NetworkSolutions/CSS/server.css">
     </head>
 <body style="background-color:white">
   
