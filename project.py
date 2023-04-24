@@ -1,3 +1,4 @@
+from key import *
 def vending_machine():
     machine = {
         "1:Chocolate":[
@@ -56,18 +57,17 @@ def vending_machine():
                         "5:Freez:0.89$"
                     ]
         } 
-    for i in machine: 
-        if(i=="2:Chips&crackers"):
-            for j in machine[i]:
-                print(j)
+    for i in machine:
+        print(i)
+    
+    select_product(machine,int(input("enter the key:")))
 
-    return machine
-
-def select_product(machine, product):
-    if product in machine:
-        return machine[product]
-    else:
-        return None
+def select_product(machine,key):
+   check_key(machine,key)
+   for i in machine:
+        if(i==key):
+            
+            print(machine[i])
 
 def calculate_price(price, quantity):
     return price * quantity
@@ -82,5 +82,5 @@ def buy_product(machine):
         total_price = calculate_price(price, quantity)
         print("Total price: ${:.2f}".format(total_price))
 
-machine = vending_machine()
-buy_product(machine)
+
+vending_machine()
