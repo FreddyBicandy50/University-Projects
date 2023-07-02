@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EduLine</string>
+    <string name="password_texthint">   Password</string>
+    <string name="id_texthint">   Student id</string>
+    <string name="signupText">Don\'t have an account?</string>
+    <string name="text_space">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc quis nunc pretium imperdiet. Integer ac diLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec nunc quis nunc pretium imperdiet. Integer ac diam non lorem eleifend ultricies nec at nibh. Integer vel tellus eu lorem mollis vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egesta Suspendisse et purus vitae magna euismod rhoncus</string>
+    <string name="image_desc">style_header</string>
+    <string name="welc_text">Welcome!</string>
+    <string name="message">Sign in and get started</string>
+
+</resources>
