@@ -14,16 +14,16 @@
 #define GREEN 6
 #define RED 5
 
-String MODES[] = {"RFID Reader", "LED Brightness", "Fan Speed", "Temperature", "Warning!"};
-bool backlight = true;
+String MODES[] = {"   RFID Reader", "LED Brightness", "Fan Speed", "Temperature", "Warning!"};
 int fadeValue = 0;
 IRrecv IR(A3);
 int fade = 0;
 String ID;
+int cursor = 0;
 
 void IR_RECEIVER();
 void ID_Check();
-void light_control();
+void light_control(bool);
 void Access(bool);
 
 void setup()
@@ -44,13 +44,14 @@ void setup()
 	pinMode(RED, OUTPUT);
 	//
 	// Launch Software
-	start_sound();
-	Receiver_MOD(MODES[0]);
+	// start_sound();
+	cursor=Receiver_MOD(MODES[0]);
 	IR.start();
 }
 
 void loop()
 {
+	LED(cursor);
 
 	// check RFID Cards
 	ID_Check();
@@ -69,39 +70,11 @@ void IR_RECEIVER()
 
 		// Check for specific remote codes
 		if (IR.decodedIRData.decodedRawData == POWER)
-		{
-			Display_CardInfo("POWER", 0);
-			if (backlight)
-			{
-				backlight = !backlight;
-				lcd.noBacklight();
-			}
-			else
-			{
-				backlight = !backlight;
-				lcd.backlight();
-			}
-		}
+			Display_power();
 		else if (IR.decodedIRData.decodedRawData == PLUS)
-		{
-			Display_CardInfo("PLUS", 0);
-			if (fade < 5)
-			{
-				fadeValue += 51;
-				light_control();
-				fade++;
-			}
-		}
+			light_control(true);
 		else if (IR.decodedIRData.decodedRawData == MINUS)
-		{
-			Display_CardInfo("MINUS", 0);
-			if (fade > 0)
-			{
-				fadeValue -= 51;
-				light_control();
-				fade--;
-			}
-		}
+			light_control(false);
 		else if (IR.decodedIRData.decodedRawData == MODE)
 			Display_CardInfo("MODE", 0);
 		else
@@ -128,9 +101,26 @@ void ID_Check()
 	return;
 }
 
-void light_control()
+void light_control(bool fadeUp)
 {
-	analogWrite(RED, fadeValue);
+	if (fadeUp)
+	{
+		if (fade < 5)
+		{
+			fadeValue += 51;
+			analogWrite(RED, fadeValue);
+			fade++;
+		}
+	}
+	else
+	{
+		if (fade > 0)
+		{
+			fadeValue -= 51;
+			analogWrite(RED, fadeValue);
+			fade--;
+		}
+	}
 	delay(30);
 }
 void Access(bool auth)
@@ -142,7 +132,6 @@ void Access(bool auth)
 		lcd.clear();
 		Display_CardInfo(ID, 0);
 		Display_CardInfo("Access granted", 1);
-
 		delay(2000);
 		Receiver_MOD(MODES[0]);
 	}
