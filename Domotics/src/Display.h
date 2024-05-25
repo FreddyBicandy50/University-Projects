@@ -11,6 +11,7 @@ void Display_CardInfo(String message, int position)
     int i;
 
     i = 0;
+    lcd.clear();
     while (message[i] != '\0')
     {
         lcd.setCursor(i, position);
@@ -18,4 +19,14 @@ void Display_CardInfo(String message, int position)
         delay(10);
         i++;
     }
+}
+
+void Receiver_MOD(String MODE)
+{
+	lcd.clear();
+	lcd.setCursor(0, 0);
+	lcd.print(MODE);
+	lcd.setCursor(0, 1);
+	if (MODE == "RFID Reader")
+		lcd.print("Scanning...");
 }
