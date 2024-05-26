@@ -2,7 +2,6 @@
 
 #define Icons_H
 
-
 byte LED_Shape[] =
 	{
 		B00100,
@@ -12,7 +11,8 @@ byte LED_Shape[] =
 		B11111,
 		B11111,
 		B01010,
-		B01000};
+		B01000,
+};
 
 byte Wireless_Shape[] =
 	{

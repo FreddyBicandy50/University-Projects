@@ -4,7 +4,6 @@
 void Draw(byte Shape[], int place, int postion)
 {
     lcd.createChar(0, Shape);
-    lcd.home();
     lcd.setCursor(place, postion);
     lcd.write(0);
 }
@@ -48,11 +47,14 @@ void Receiver_MOD(String MODE)
         Display("Scanning...", 1);
     }
     else if (MODE == MODES[1])
-        Draw(Box, 0, 1);
+    {
+        Draw(LED_Shape, cursor, 0);
+    }
 }
 
 void current_brightness()
 {
-    for (int i = 0; i < brightness[LED_Selector]; i++)
+    for (int i = 0; i < brightness[LED_Selector]; i++){
         Draw(Box, i, 1);
+    }
 }

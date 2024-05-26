@@ -33,9 +33,7 @@ void loop()
 
 	// // check RFID Cards
 	if (Selector == 0)
-	{
 		ID_Check();
-	}
 
 	// check for remote presses
 	IR_RECEIVER();
