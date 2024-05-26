@@ -1,5 +1,6 @@
-#include <Arduino.h>
-#define BUZZER 8
+#include <Header.h>
+#define BUZZER_H
+
 
 void start_sound()
 {
@@ -9,6 +10,7 @@ void start_sound()
     tone(BUZZER, 800);
     delay(200);
     noTone(BUZZER);
+    return;
 }
 
 void Access_sound(bool auth)

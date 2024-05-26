@@ -1,37 +1,16 @@
+#include "Header.h"
 
-
-#include <LiquidCrystal_I2C.h>
-#include <IRremote.h>
-#include <Display.h>
-#include <Buzzer.h>
-#include <Remote.h>
-#include <string.h>
-#include <Wire.h>
-#include <RFID.h>
-
-#define BUZZER 8
-#define YELLOW 3
-#define GREEN 6
-#define RED 5
-
-String MODES[] = {"   RFID Reader", "LED Brightness", "Fan Speed", "Temperature", "Warning!"};
-int fadeValue = 0;
-IRrecv IR(A3);
-int fade = 0;
-String ID;
-int cursor = 0;
-
-void IR_RECEIVER();
 void ID_Check();
-void light_control(bool);
 void Access(bool);
+void IR_RECEIVER();
+void light_control(bool);
 
 void setup()
 {
 	Serial.begin(9600);
 	SPI.begin();
 
-	// INIT
+	// // INIT
 	lcd.init();
 	mfrc522.PCD_Init();
 
@@ -42,19 +21,21 @@ void setup()
 	pinMode(YELLOW, OUTPUT);
 	pinMode(GREEN, OUTPUT);
 	pinMode(RED, OUTPUT);
-	//
+
 	// Launch Software
-	// start_sound();
-	cursor=Receiver_MOD(MODES[0]);
+	start_sound();
+	Receiver_MOD(MODES[Selector]);
 	IR.start();
 }
 
 void loop()
 {
-	LED(cursor);
 
-	// check RFID Cards
-	ID_Check();
+	// // check RFID Cards
+	if (Selector == 0)
+	{
+		ID_Check();
+	}
 
 	// check for remote presses
 	IR_RECEIVER();
@@ -65,26 +46,126 @@ void IR_RECEIVER()
 	if (IR.decode())
 	{
 
-		lcd.clear();
-		Serial.println(IR.decodedIRData.decodedRawData, HEX);
-
+		// Serial.println(IR.decodedIRData.decodedRawData, HEX);
 		// Check for specific remote codes
 		if (IR.decodedIRData.decodedRawData == POWER)
 			Display_power();
+		else if (IR.decodedIRData.decodedRawData == ZERO)
+		{
+			if (Selector == 1)
+			{
+				LED_Selector = 0;
+				lcd.clear();
+				Receiver_MOD(MODES[1]);
+				current_brightness();
+			}
+		}
+		else if (IR.decodedIRData.decodedRawData == ONE)
+		{
+			if (Selector == 1)
+			{
+				LED_Selector = 1;
+				lcd.clear();
+				Receiver_MOD(MODES[1]);
+				current_brightness();
+			}
+		}
+		else if (IR.decodedIRData.decodedRawData == TWO)
+		{
+			if (Selector == 1)
+			{
+				LED_Selector = 2     ;
+				lcd.clear();
+				Receiver_MOD(MODES[1]);
+				current_brightness();
+			}
+		}
 		else if (IR.decodedIRData.decodedRawData == PLUS)
-			light_control(true);
+		{
+			if (Selector == 1)
+			{
+				light_control(true);
+			}
+		}
 		else if (IR.decodedIRData.decodedRawData == MINUS)
-			light_control(false);
+		{
+			if (Selector == 1)
+			{
+				light_control(false);
+			}
+		}
 		else if (IR.decodedIRData.decodedRawData == MODE)
-			Display_CardInfo("MODE", 0);
-		else
-			Display_CardInfo("UNKNOWN", 0);
-		lcd.clear();
-		lcd.print(IR.decodedIRData.decodedRawData, HEX);
+		{
+			Selector == 4 ? Selector = 0 : Selector++;
+
+			Receiver_MOD(MODES[Selector]);
+
+			switch (Selector)
+			{
+			case 0:
+				start_sound();
+				break;
+
+			case 1:
+				current_brightness();
+				break;
+
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+
+			default:
+				start_sound();
+			}
+
+			IR.start();
+		}
 		delay(50);
 		IR.resume(); // Receive the next value
 	}
 }
+
+void light_control(bool fadeUp)
+{
+	if (fadeUp)
+	{
+		if (fade[LED_Selector] < 9)
+		{
+			lcd.clear();
+			fadeValue[LED_Selector] += 28;
+
+			analogWrite(LED[LED_Selector], fadeValue[LED_Selector]);
+			Receiver_MOD(MODES[1]);
+			fade[LED_Selector]++;
+			brightness[LED_Selector] = fade[LED_Selector] * 2;
+
+			if (brightness[LED_Selector] > 18)
+				brightness[LED_Selector] = 18;
+		}
+	}
+	else
+	{
+		if (fade[LED_Selector] > 0)
+		{
+			lcd.clear();
+			fadeValue[LED_Selector] -= 28;
+
+			analogWrite(LED[LED_Selector], fadeValue[LED_Selector]);
+			Receiver_MOD(MODES[1]);
+			fade[LED_Selector]--;
+			brightness[LED_Selector] = fade[LED_Selector] * 2;
+
+			if (brightness[LED_Selector] < 0)
+				brightness[LED_Selector] = 0;
+		}
+	}
+	current_brightness();
+	delay(30);
+}
+
 void ID_Check()
 {
 	if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial())
@@ -101,28 +182,6 @@ void ID_Check()
 	return;
 }
 
-void light_control(bool fadeUp)
-{
-	if (fadeUp)
-	{
-		if (fade < 5)
-		{
-			fadeValue += 51;
-			analogWrite(RED, fadeValue);
-			fade++;
-		}
-	}
-	else
-	{
-		if (fade > 0)
-		{
-			fadeValue -= 51;
-			analogWrite(RED, fadeValue);
-			fade--;
-		}
-	}
-	delay(30);
-}
 void Access(bool auth)
 {
 	if (auth)
@@ -130,8 +189,8 @@ void Access(bool auth)
 		Access_sound(true);
 		// display info
 		lcd.clear();
-		Display_CardInfo(ID, 0);
-		Display_CardInfo("Access granted", 1);
+		Display(ID, 0);
+		Display("Access granted", 1);
 		delay(2000);
 		Receiver_MOD(MODES[0]);
 	}
@@ -140,8 +199,8 @@ void Access(bool auth)
 		Access_sound(false);
 		// display info
 		lcd.clear();
-		Display_CardInfo(ID, 0);
-		Display_CardInfo("Access denied", 1);
+		Display(ID, 0);
+		Display("Access denied", 1);
 		// reset display
 		delay(2000);
 		Receiver_MOD(MODES[0]);

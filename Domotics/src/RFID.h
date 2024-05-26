@@ -1,11 +1,6 @@
-#include <MFRC522.h>
-#include <SPI.h>
-
+#include "Header.h"
 #define RFID_H
-#define RST_PIN 9
-#define SS_PIN 10
 
-MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 String Read_RFID()
 {

@@ -1,5 +1,5 @@
-
-#define Remote_H
+#include "Header.h"
+#define REMOTE_H
 
 // Power      // Mode      // Mute
 #define POWER 	0xBA45FF00

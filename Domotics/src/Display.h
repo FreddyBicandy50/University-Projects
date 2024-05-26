@@ -1,37 +1,15 @@
-#include <LiquidCrystal_I2C.h>
-#include <Wire.h>
-#include <Arduino.h>
+#include "Header.h"
+#define DISPLAY_H
 
-#define Display_H
-
-LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
-bool backlight = true;
-int pos = 0;
-
-byte customChar[] = {
-    B00100,
-    B01110,
-    B11111,
-    B11111,
-    B11111,
-    B11111,
-    B01010,
-    B01000};
-
-void LED(int cursor)
+void Draw(byte Shape[], int place, int postion)
 {
-    lcd.createChar(0, customChar);
+    lcd.createChar(0, Shape);
     lcd.home();
-    lcd.setCursor(cursor, 1);
-    for (int i = 0; i < 7; i++)
-    {
-        /* code */
-    }
+    lcd.setCursor(place, postion);
     lcd.write(0);
-    
 }
 
-void Display_CardInfo(String message, int position)
+void Display(String message, int position)
 {
     int i;
 
@@ -43,21 +21,8 @@ void Display_CardInfo(String message, int position)
         delay(10);
         i++;
     }
-    pos = i;
+    cursor = i;
 }
-
-int Receiver_MOD(String MODE)
-{
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print(MODE);
-    lcd.setCursor(0, 1);
-    if (MODE == "   RFID Reader")
-        Display_CardInfo("Scanning...", 1);
-  
-    return pos;
-}
-
 void Display_power()
 {
     if (backlight)
@@ -70,4 +35,24 @@ void Display_power()
         backlight = !backlight;
         lcd.backlight();
     }
+}
+
+void Receiver_MOD(String MODE)
+{
+    lcd.clear();
+    lcd.setCursor(0, 0);
+    Display(MODE, 0);
+    if (MODE == MODES[0])
+    {
+        Draw(Wireless_Shape, cursor, 0);
+        Display("Scanning...", 1);
+    }
+    else if (MODE == MODES[1])
+        Draw(Box, 0, 1);
+}
+
+void current_brightness()
+{
+    for (int i = 0; i < brightness[LED_Selector]; i++)
+        Draw(Box, i, 1);
 }
