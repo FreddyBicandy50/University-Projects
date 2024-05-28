@@ -1,7 +1,26 @@
 #include "Header.h"
-
 #define Icons_H
 
+byte FanIcon[8] = {
+	B00000,
+	B11001,
+	B01011,
+	B00100,
+	B11010,
+	B10011,
+	B00000,
+	B00000,
+};
+byte Temp[8] = {
+	B01110,
+	B01010,
+	B01010,
+	B01010,
+	B01110,
+	B01110,
+	B01110,
+	B00100,
+};
 byte LED_Shape[] =
 	{
 		B00100,

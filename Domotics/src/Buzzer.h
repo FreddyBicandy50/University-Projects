@@ -1,6 +1,16 @@
 #include <Header.h>
 #define BUZZER_H
 
+void buzzerAlert()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        tone(BUZZER, 1000);
+        delay(500);
+        noTone(BUZZER);
+        delay(500);
+    }
+}
 
 void start_sound()
 {

@@ -4,6 +4,8 @@ void ID_Check();
 void Access(bool);
 void IR_RECEIVER();
 void light_control(bool);
+void temp();
+void flash();
 
 void setup()
 {
@@ -18,9 +20,14 @@ void setup()
 	IR.enableIRIn();
 
 	// PIN MODE
+	// OUTPUT
 	pinMode(YELLOW, OUTPUT);
 	pinMode(GREEN, OUTPUT);
 	pinMode(RED, OUTPUT);
+
+	// INPUT
+	pinMode(TEMP, INPUT);
+	pinMode(FLAME, INPUT);
 
 	// Launch Software
 	start_sound();
@@ -30,11 +37,16 @@ void setup()
 
 void loop()
 {
+	int prev = celsius;
+	rawTemp = analogRead(TEMP);
+	celsius = map(((rawTemp - 20) * 3.04), 0, 1023, -40, 125);
 
 	// // check RFID Cards
 	if (Selector == 0)
 		ID_Check();
-
+	else if (Selector == 3)
+		if (celsius != prev)
+			temp();
 	// check for remote presses
 	IR_RECEIVER();
 }
@@ -72,7 +84,7 @@ void IR_RECEIVER()
 		{
 			if (Selector == 1)
 			{
-				LED_Selector = 2     ;
+				LED_Selector = 2;
 				lcd.clear();
 				Receiver_MOD(MODES[1]);
 				current_brightness();
@@ -94,23 +106,23 @@ void IR_RECEIVER()
 		}
 		else if (IR.decodedIRData.decodedRawData == MODE)
 		{
-			Selector == 4 ? Selector = 0 : Selector++;
+			Selector == 3 ? Selector = 0 : Selector++;
 
 			Receiver_MOD(MODES[Selector]);
-
 			switch (Selector)
 			{
 			case 0:
 				start_sound();
 				break;
-
 			case 1:
-				current_brightness();
+				if (brightness[0] == 1 && brightness[1] == 1 && brightness[2] == 1)
+					flash();
 				break;
-
 			case 2:
+				Display("Coming Soon!", 1);
 				break;
 			case 3:
+				temp();
 				break;
 			case 4:
 				break;
@@ -163,7 +175,36 @@ void light_control(bool fadeUp)
 	current_brightness();
 	delay(30);
 }
+void temp()
+{
 
+	if (celsius < 0)
+	{
+		celsius += 199;
+	}
+	else if (celsius > 80)
+	{
+		int res = celsius - 20;
+		celsius = celsius - res;
+	}
+
+	lcd.clear();
+	Receiver_MOD(MODES[Selector]);
+	lcd.setCursor(0, 1);
+	lcd.print(celsius);
+	if (celsius >= 80)
+	{
+		buzzerAlert();
+		for (int i = 0; i <= 255; i += 5)
+		{
+			analogWrite(LED[2], i);
+			delay(10);
+		}
+		return;
+	}
+
+	delay(1000);
+}
 void ID_Check()
 {
 	if (!mfrc522.PICC_IsNewCardPresent() || !mfrc522.PICC_ReadCardSerial())
@@ -202,5 +243,21 @@ void Access(bool auth)
 		// reset display
 		delay(2000);
 		Receiver_MOD(MODES[0]);
+	}
+}
+
+void flash()
+{
+	for (int i = 0; i < 2; i++)
+	{
+		digitalWrite(RED, 1);
+		digitalWrite(YELLOW, 1);
+		digitalWrite(GREEN, 1);
+
+		delay(30);
+
+		digitalWrite(RED, 0);
+		digitalWrite(YELLOW, 0);
+		digitalWrite(GREEN, 0);
 	}
 }

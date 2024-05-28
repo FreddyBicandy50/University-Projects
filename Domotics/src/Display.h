@@ -47,14 +47,17 @@ void Receiver_MOD(String MODE)
         Display("Scanning...", 1);
     }
     else if (MODE == MODES[1])
-    {
         Draw(LED_Shape, cursor, 0);
-    }
+    else if (MODE == MODES[2])
+        Draw(FanIcon, cursor, 0);
+    else if (MODE == MODES[3])
+        Draw(Temp, cursor, 0);
 }
 
 void current_brightness()
 {
-    for (int i = 0; i < brightness[LED_Selector]; i++){
+    for (int i = 0; i < brightness[LED_Selector]; i++)
+    {
         Draw(Box, i, 1);
     }
 }
