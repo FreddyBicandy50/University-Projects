@@ -19,11 +19,11 @@ Design : <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?n
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg"/> Scratch Highway Escape (Game) 
 goal: using scratch is a great and easy way to create little 2d games using a block based programing the aim is to use the platform with everything it got to implement the logic by creating something that can be playable 
 
-Learning Outcomes: applying logic to different sprites , understand the screen axis to control different sprites simoultanosly , apply sounds and costumes , track score 
+Learning Outcomes: applying logic to different sprites , understand the screen axis to control different sprites simultaneously , apply sounds and costumes , track score 
 
-Extend: we can modify the game to make it work on devices giroscope sensor so dodging the cars will happen by titlting the screen
+Extend: we can modify the game to make it work on devices gyroscope sensor so dodging the cars will happen by tilting the screen
 
-Design : <a href="https://scratch.mit.edu/projects/552184172/">Game Link</a>
+Design : <a target="_blank" href="https://scratch.mit.edu/projects/552184172/">Game Link</a>
 
 ---
 fbicandy@student.42.fr | LinkedIn: [fbicandy](https://www.linkedin.com/in/freddy-bicandy/)
