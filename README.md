@@ -6,7 +6,7 @@
 
 <b>Learning Outcomes:</b> being able to program for each kind of Sensors and Components to integrate with the system
 
-<b>Possible Ehancements:</b> we can extend this project by creating a mobile app for all connected components and be able to manage them using the app
+<b>Possible Enhancements:</b> we can extend this project by creating a mobile app for all connected components and be able to manage them using the app
 
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png"/> Android Studio EduLine (Java)
 
@@ -14,7 +14,7 @@
 
 <b>Learning Outcomes:</b> installing android studio and the emulator or using WSL for extra challenge , exchanging data between the app and the mysql database using JDBC Driver , Elegance Design using the basics of Android studio XML forms
 
-<b>Possible Ehancements:</b> for this project its best to build an API for key user authentications and data transfer and exchange , also since we are doing mobile app its better to use the notification service to get best outcome by this we can send announcements using the app
+<b>Possible Enhancements:</b> for this project its best to build an API for key user authentications and data transfer and exchange , also since we are doing mobile app its better to use the notification service to get best outcome by this we can send announcements using the app
 
 <b>Design:</b> <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?node-id=1-1717&starting-point-node-id=1%3A8185&scaling=contain&authuser=0">Figma Design</a>
 
@@ -24,17 +24,17 @@
 
 <b>Learning Outcomes:</b> applying logic to different sprites , understand the screen axis to control different sprites simultaneously , apply sounds and costumes , track score
 
-<b>Possible Ehancements:</b> we can modify the game to make it work on devices gyroscope sensor so dodging the cars will happen by tilting the screen
+<b>Possible Enhancements:</b> we can modify the game to make it work on devices gyroscope sensor so dodging the cars will happen by tilting the screen
 
 <b>Design:</b> <a href="https://scratch.mit.edu/projects/552184172/" target="_blank">Game Link</a>
 
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"/> JavaFx Hospital Managment System (Java)
 
-<b>Goal:</b> create a simple Hospital Managment System to track doctors,nurses,patients records and duties while creating a simple User Interface Using JavaFx
+<b>Goal:</b> create a simple Hospital Management System to track doctors,nurses,patients records and duties while creating a simple User Interface Using JavaFx
 
-<b>Learning Outcomes:</b> Learn how to use&setup JavaFx , create the nessasry logic Design for the System Using OOP Techniques
+<b>Learning Outcomes:</b> Learn how to use setup JavaFx , create the necessary logic Design for the System Using OOP Techniques
 
-<b>Possible Ehancements:</b> we can enhance this software by store data in actual database rather than using arrays only using JDBC or an API for extra challenge
+<b>Possible Enhancements:</b> we can enhance this software by store data in actual database rather than using arrays only using JDBC or an API for extra challenge
 
 ## <img align="center" width="4%" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/> <img align="center" width="4%" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"/> <img align="center" width="4%" src="https://user-images.githubusercontent.com/25181517/183570228-6a040b9f-3ddf-47a2-a201-743121dac664.png"/> Website Network Solutions (HTML/CSS/PHP)
 
@@ -45,14 +45,27 @@
 <b>Possible Enhancements:</b> this website has the lack of responsiveness on different devices screen it would be much better to consider a responsive website
 
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
+<b>Goal:</b> this is a database design for a Telecom Company to store and track the record of users by implementing a well structured business rule
 
-<b>Goal:</b> this is a databse design for a Telecom Company to store and track the record of users by implementing a well structured buisnees rule
+<b>Learning Outcomes:</b> Setting up Oracle Database With Different Users and roles, create the necessary database, and tables respecting the relationship
 
-<b>Learning Outcomes:</b> Setting up Oracle Database With Different Users and roles, create the nessasry database, and tables respecting the relationship
-
-<b>Possible Enhancements:</b> you could create a good software or web app on top of this well structured Databse Design
+<b>Possible Enhancements:</b> you could create a good software or web app on top of this well structured Database Design
 
 <b>Design:</b> <a href="https://github.com/FreddyBicandy50/Projects_idea/blob/main/Telecom%20System%20/Telecommunication_System.pdf" target="_blank">Documentation</a>
+
+
+<b>Design:</b> <a href="https://github.com/FreddyBicandy50/Projects_idea/blob/main/Telecom%20System%20/Telecommunication_System.pdf" target="_blank">Documentation</a>
+
+## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png"/> AI Tic-Tac-Toe (C++)
+
+
+<b>Goal:</b> A colorful cli famous game the aim of the project beside its simple concept is to create a cli game with multiplier or single player option the multiplier could be played by 2 or the single mode using AI MIN-MAX Algorithm
+
+<b>Learning Outcomes:</b> Researching and implementing an AI-Algorithm MIN-MAX , Using various system method to make the game colorful and create a UI on the cli with a render phase , understand of dynamic memory allocation
+
+<b>Possible Enhancements:</b> ---
+
+<b>Design:</b> <a href="https://github.com/FreddyBicandy50/Projects_idea/blob/main/Tic-Tac-Toe/Alogrithm%20Design.pdf" target="_blank">Flowchart Design</a>
 
 ---
 
