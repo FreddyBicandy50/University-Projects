@@ -16,7 +16,7 @@ Extend: for this project its best to build an API for key user authentications a
 
 Design : <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?node-id=1-1717&starting-point-node-id=1%3A8185&scaling=contain&authuser=0">Figma Design</a>
 
-## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192108895-20dc3343-43e3-4a54-a90e-13a4abbc57b9.png"/> Scratch Highway Escape (Game) 
+## <img align="center" width="5%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0UlJUvLLMrRxceySJK7mszAWuQh0xE9yUA&s"/> Scratch Highway Escape (Game) 
 goal: using scratch is a great and easy way to create little 2d games using a block based programing the aim is to use the platform with everything it got to implement the logic by creating something that can be playable 
 
 Learning Outcomes: applying logic to different sprites , understand the screen axis to control different sprites simoultanosly , apply sounds and costumes , track score 
