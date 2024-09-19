@@ -23,7 +23,7 @@ Learning Outcomes: applying logic to different sprites , understand the screen a
 
 Extend: we can modify the game to make it work on devices gyroscope sensor so dodging the cars will happen by tilting the screen
 
-Design : <a target="_blank" href="https://scratch.mit.edu/projects/552184172/">Game Link</a>
+Design : <a href="https://scratch.mit.edu/projects/552184172/" target="_blank">Game Link</a>
 
 ---
 fbicandy@student.42.fr | LinkedIn: [fbicandy](https://www.linkedin.com/in/freddy-bicandy/)
