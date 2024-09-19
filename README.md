@@ -7,7 +7,7 @@ Goal: is to make an system on arudino's Crystal Liquid Display that can be contr
 Learning Outcomes: being able to program for each kind of Sensors and Components to integrate with the system
 
 Extend: we can extend this project by creating a mobile app for all connected components and be able to manage them using the app
-## Android Studio EduLine (Java) <img width="3%" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"/>
+## Android Studio EduLine (Java) <img width="5%" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"/>
 goal: this project is a for schools and especially for students and parents it aims to track and monitor students progress like(schedule , Agendas, Attendees, Grades) all of the student information is stored on external mysql database and the sensitive informations and cached data is stored on SQLITE in order to prevent many request on the server
 
 Learning Outcomes: installing android studio and the emulator or using WSL for extra challenge , exchanging data between the app and the mysql database using JDBC Driver , Elegance Design using the basics of Android studio XML forms
