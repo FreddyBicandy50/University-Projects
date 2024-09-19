@@ -1,4 +1,4 @@
-# Projects idea for portfolio/university 🚀
+# Projects ideas for portfolio/university 🚀
 
 ## <img align="center" width="5%" src="https://github-production-user-asset-6210df.s3.amazonaws.com/136815194/255505529-a57a85ba-e2dd-4036-85b6-7e1532391627.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240919%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240919T170803Z&X-Amz-Expires=300&X-Amz-Signature=1c2eb9f64943fcee5c59d15d68098ea3b9b957718125fe07b78e898524cad3c2&X-Amz-SignedHeaders=host"/> Arduino - Controller System (C++)
 
