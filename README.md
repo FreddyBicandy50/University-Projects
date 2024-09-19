@@ -26,7 +26,7 @@ Extend: we can modify the game to make it work on devices gyroscope sensor so do
 Design : <a href="https://scratch.mit.edu/projects/552184172/" target="_blank">Game Link</a>
 
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png"/> JavaFx Hospital Managment System (Java) 
-goal: create a simple Hospital Managment System to track doctors,nurses,patients records and duties while creating a simple User Interface Using JavaFx 
+<b>goal</b>: create a simple Hospital Managment System to track doctors,nurses,patients records and duties while creating a simple User Interface Using JavaFx 
 
 Learning Outcomes: Learn how to use&setup JavaFx , create the nessasry logic Design for the System Using OOP Techniques 
 
