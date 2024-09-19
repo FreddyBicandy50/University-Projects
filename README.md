@@ -33,7 +33,7 @@
 
 <b>Possible Ehancements:</b> we can enhance this software by store data in actual database rather than using arrays only using JDBC or an API for extra challenge
 
-## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/> Website Network Solutions Web (HTML/CSS/PHP) 
+## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/> Website Network Solutions (HTML/CSS/PHP) 
 <b>Goal:</b> its a website for network ISP which have a login portal for its users to see their consumption in a beautiful and modern way using charts also they can easily recharge using the portal and the website contains all the necessary information about the plans and their different services
 
 <b>Learning Outcomes:</b> Leverage your Web Skills by creating a challenging web design using the basics of web HTML/CSS for the front end and PHP + MYSQL for backend to get the idea of how mos websites works at the bottom before deciding which framework to pick
