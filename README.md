@@ -14,7 +14,7 @@ Learning Outcomes: installing android studio and the emulator or using WSL for e
 
 Extend: for this project its best to build an API for key user authentications and data transfer and exchange , also since we are doing mobile app its better to use the notification service to get best outcome by this we can send announcements using the app
 
-Design : <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?node-id=1-1717&starting-point-node-id=1%3A8185&scaling=contain&authuser=0">
+Design : <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?node-id=1-1717&starting-point-node-id=1%3A8185&scaling=contain&authuser=0">Figma Design</a>
 
 ---
 fbicandy@student.42.fr | LinkedIn: [fbicandy](https://www.linkedin.com/in/freddy-bicandy/)
