@@ -12,7 +12,7 @@
 
 <b>Goal:</b> this project is a for schools and especially for students and parents it aims to track and monitor students progress like(schedule , Agendas, Attendees, Grades) all of the student information is stored on external mysql database and the sensitive informations and cached data is stored on SQLITE in order to prevent many request on the server
 
-<b>Learning Outcomes:</b> installing android studio and the emulator or using WSL for extra challenge , exchanging data between the app and the mysql database using JDBC Driver , Elegance Design using the basics of Android studio XML forms
+<b>Learning Outcomes:</b> installing android studio and the emulator or using WSA for extra challenge , exchanging data between the app and the mysql database using JDBC Driver , Elegance Design using the basics of Android studio XML forms
 
 <b>Possible Enhancements:</b> for this project its best to build an API for key user authentications and data transfer and exchange , also since we are doing mobile app its better to use the notification service to get best outcome by this we can send announcements using the app
 
