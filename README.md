@@ -16,7 +16,7 @@
 
 <b>Possible Enhancements:</b> for this project its best to build an API for key user authentications and data transfer and exchange , also since we are doing mobile app its better to use the notification service to get best outcome by this we can send announcements using the app
 
-<b>Design:</b> <a href="https://www.figma.com/proto/Ap7wKtXiTjhhbUiB4O4Sum/School-In?node-id=1-1717&starting-point-node-id=1%3A8185&scaling=contain&authuser=0">Figma Design</a>
+<b>Design:</b> <a href="https://prezi.com/view/vdmxQrrBMxikVDnOO7nd/">Design</a>
 
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg"/> Scratch Highway Escape (Game)
 
