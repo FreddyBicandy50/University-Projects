@@ -1,6 +1,6 @@
 # Projects ideas for portfolio/university 🚀
 
-## <img align="center" width="5%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/> Nutritionists website
+## <img align="center" width="8%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/> Nutritionists website
 
 <b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
 
