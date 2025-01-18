@@ -4,7 +4,7 @@
 
 <b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
 
-<b>Learning Outcomes:</b> learn tailwind for a good design and alot of php and ajax for data manipulation and logic
+<b>Learning Outcomes:</b> learn tailwind for a good design and responsivness php routing and security, php ajax and data manipulations, php integrations with front end as components
 
 <b>Possible Enhancements:</b> we can extend this project by allowing the blog writer to use the help of ai tools thus ai api is needed here
 
