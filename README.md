@@ -1,5 +1,13 @@
 # Projects ideas for portfolio/university 🚀
 
+## <img align="center" width="5%" src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png"/> Nutritionists website
+
+<b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
+
+<b>Learning Outcomes:</b> learn tailwind for a good design and alot of php and ajax for data manipulation and logic
+
+<b>Possible Enhancements:</b> we can extend this project by allowing the blog writer to use the help of ai tools thus ai api is needed here
+
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png"/> Arduino - Controller System (C++)
 
 <b>Goal:</b> is to make a system on arudino's Crystal Liquid Display that can be controlled using a remote controller to manage Different Sensors and Devices example(fan speed, high temperature sensor detector and alerts, LED's Brightness, RFID Scanners)
@@ -45,6 +53,7 @@
 <b>Possible Enhancements:</b> this website has the lack of responsiveness on screen sizes it would be much better to consider a responsive website
 
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
+
 <b>Goal:</b> this is a database design for a Telecom Company to store and track the record of users by implementing a well structured business rule
 
 <b>Learning Outcomes:</b> Setting up Oracle Database With Different Users and roles, create the necessary database, and tables respecting the relationship
@@ -53,9 +62,7 @@
 
 <b>Design:</b> <a href="https://github.com/FreddyBicandy50/Projects_idea/blob/main/Telecom%20System%20/Telecommunication_System.pdf" target="_blank">Documentation</a>
 
-
 ## <img align="center" width="5%" src="https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png"/> AI Tic-Tac-Toe (C++)
-
 
 <b>Goal:</b> A colorful cli famous game the aim of the project beside its simple concept is to create a cli game with multiplier or single player option the multiplier could be played by 2 or the single mode using AI MIN-MAX Algorithm
 
