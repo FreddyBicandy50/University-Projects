@@ -1,6 +1,6 @@
 # Projects ideas for portfolio/university 🚀
 
-## <img align="center" width="5%" src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png"/> Nutritionists website
+## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Php_logo.svg/1200px-Php_logo.svg.png"/> Nutritionists website
 
 <b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
 
