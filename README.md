@@ -8,6 +8,8 @@
 
 <b>Possible Enhancements:</b> we can extend this project by allowing the blog writer to use the help of ai tools thus ai api is needed here
 
+<b>Website Link:</b> <a href="https://bicandy-new.42web.io/nutriverse" target="_blank">click here</a>
+
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png"/> Arduino - Controller System (C++)
 
 <b>Goal:</b> is to make a system on arudino's Crystal Liquid Display that can be controlled using a remote controller to manage Different Sensors and Devices example(fan speed, high temperature sensor detector and alerts, LED's Brightness, RFID Scanners)
