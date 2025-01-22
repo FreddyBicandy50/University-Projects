@@ -1,6 +1,6 @@
 # Projects ideas for portfolio/university 🚀
 
-## <img align="center" width="3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="8%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists website
+## <img align="center" width="3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="8%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists WebApp
 
 <b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
 
@@ -8,7 +8,7 @@
 
 <b>Possible Enhancements:</b> we can extend this project by allowing the blog writer to use the help of ai tools thus ai api is needed here
 
-<b>Website Link:</b> <a href="https://bicandy-new.42web.io/nutriverse" target="_blank">click here</a>
+<b>WebApp Link:</b> <a href="https://bicandy-new.42web.io/nutriverse" target="_blank">click here</a>
 
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png"/> Arduino - Controller System (C++)
 
