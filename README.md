@@ -9,7 +9,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Possible Enhancements:</b> we can extend this project by creating a Web interface for the dietitian
 
-<b>Python Link:</b> <a href="https://colab.research.google.com/drive/1CEkQF3WFZZ2quyrrnvk7bFEiIhrSk2qJ?usp=sharing" target="_blank">click here</a>
+<b>Google Collab:</b> <a href="https://colab.research.google.com/drive/1CEkQF3WFZZ2quyrrnvk7bFEiIhrSk2qJ?usp=sharing" target="_blank">click here</a>
 
 ## <img align="center" width="3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="8%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists WebApp (Tailwind/PHP)
 
