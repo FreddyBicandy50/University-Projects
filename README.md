@@ -39,7 +39,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Design:</b> <a href="https://prezi.com/view/vdmxQrrBMxikVDnOO7nd/">Design</a>
 
-## <img align="center" width="58%" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg"/> Scratch Highway Escape (Game)
+## <img align="center" width="8%" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg"/> Scratch Highway Escape (Game)
 
 <b>Goal:</b> using scratch is a great and easy way to create little 2d games using a block based programing language the aim is to use the platform with everything it got to implement the logic by creating something that can be playable
 
@@ -65,7 +65,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Possible Enhancements:</b> this website has the lack of responsiveness on screen sizes it would be much better to consider a responsive website
 
-## <img align="center" width="&%" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
+## <img align="center" width="8" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
 
 <b>Goal:</b> this is a database design for a Telecom Company to store and track the record of users by implementing a well structured business rule
 
