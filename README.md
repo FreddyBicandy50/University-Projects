@@ -65,7 +65,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Possible Enhancements:</b> this website has the lack of responsiveness on screen sizes it would be much better to consider a responsive website
 
-## <img align="center" width="8" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
+## <img align="center" width="8%" src="https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.png"/> Oracle Databse Design (SQL)
 
 <b>Goal:</b> this is a database design for a Telecom Company to store and track the record of users by implementing a well structured business rule
 
