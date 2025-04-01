@@ -11,7 +11,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Google Collab:</b> <a href="https://colab.research.google.com/drive/1CEkQF3WFZZ2quyrrnvk7bFEiIhrSk2qJ?usp=sharing" target="_blank">click here</a>
 
-## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="8%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists WebApp (Tailwind/PHP)
+## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="12%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists WebApp (Tailwind/PHP)
 
 <b>Goal:</b> is to make website for dietitians clients and to request consultation and a webapp to these clients to read and write blogs with an admin panel to manage the webapp
 
@@ -57,7 +57,7 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Possible Enhancements:</b> we can enhance this software by store data in actual database rather than using arrays only using JDBC or an API for extra challenge
 
-## <img align="center" width="8%" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/> <img align="center" width="4%" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"/> <img align="center" width="4%" src="https://user-images.githubusercontent.com/25181517/183570228-6a040b9f-3ddf-47a2-a201-743121dac664.png"/> Website Network Solutions (HTML/CSS/PHP)
+## <img align="center" width="7%" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/> <img align="center" width="7%" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"/> <img align="center" width="7%" src="https://user-images.githubusercontent.com/25181517/183570228-6a040b9f-3ddf-47a2-a201-743121dac664.png"/> Website Network Solutions (HTML/CSS/PHP)
 
 <b>Goal:</b> its a website for network ISP which have a login portal for its users to see their consumption in a beautiful and modern way using charts also they can easily recharge using the portal and the website contains all the necessary information about the plans and their different services
 
