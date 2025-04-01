@@ -1,6 +1,6 @@
 # Projects ideas for portfolio/university 🚀
 
-## <img align="center" width="3%" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"/> Food Nutrition Machine Learning (Python)
+## <img align="center" width="5%" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"/> Food Nutrition Machine Learning (Python)
 
 <b>Goal:</b>This is a Food nutritionist Machine learning Model
 In the world of fast food and delivery we wanted to help one who is looking for a healthy food based on their need. therefore our solution is here to help by leveraging your diet plan by specifying the columns specifications your food with their values to make a prediction with a real food name to match your diet result
