@@ -1,6 +1,6 @@
 # Projects ideas for portfolio/university 🚀
 
-## <img align="center" width="8%" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"/> Food Nutrition Machine Learning (Python)
+## <img align="center" width="8%" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"/> NLP Grammar Checker (Python)
 
 <b>Date:</b>   Spring 25
 
