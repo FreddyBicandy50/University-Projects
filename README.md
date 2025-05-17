@@ -27,19 +27,6 @@ In the world of fast food and delivery we wanted to help one who is looking for 
 
 <b>Google Collab:</b> <a href="https://colab.research.google.com/drive/1CEkQF3WFZZ2quyrrnvk7bFEiIhrSk2qJ?usp=sharing" target="_blank">click here</a>
 
-## <img align="center" width="8%" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"/> Food Nutrition Machine Learning (Python)
-
-<b>Date:</b>   Fall 24
-
-<b>Goal:</b>This is a Food nutritionist Machine learning Model
-In the world of fast food and delivery we wanted to help one who is looking for a healthy food based on their need. therefore our solution is here to help by leveraging your diet plan by specifying the columns specifications your food with their values to make a prediction with a real food name to match your diet result
-
-<b>Learning Outcomes:</b> learn python and various machine learning algorithms by choosing the right model type for your project and the right measurements tools to provide you with scores for accurancy and performance
-
-<b>Possible Enhancements:</b> we can extend this project by creating a Web interface for the dietitian
-
-<b>Google Collab:</b> <a href="https://colab.research.google.com/drive/1CEkQF3WFZZ2quyrrnvk7bFEiIhrSk2qJ?usp=sharing" target="_blank">click here</a>
-
 ## <img align="center" width="5%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"/> <img align="center" width="12%" src="https://www.andreafiori.net/img/software-development/posts/php8-features.gif"/>  Nutritionists WebApp (Tailwind/PHP)
 
 <b>Date:</b>   Fall 24
